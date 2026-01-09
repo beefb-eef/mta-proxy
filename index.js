@@ -1,53 +1,150 @@
-import express from 'express';
-import fetch from 'node-fetch';
-import GtfsRealtimeBindings from 'gtfs-realtime-bindings';
+// index.js
+import express from "express";
+import fetch from "node-fetch";
+import GtfsRealtimeBindings from "gtfs-realtime-bindings";
+import fs from "node:fs";
+import path from "node:path";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Three feeds: ACE + BDFM + 1/2/3 (main)
-const FEED_URLS = [
-  'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace',
-  'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm',
-  'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs'
+// Put your MTA key in env vars (Render): MTA_API_KEY
+const MTA_API_KEY = process.env.MTA_API_KEY || "";
+
+// If no line is provided, we’ll fetch ALL feeds (fallback)
+const ALL_FEEDS = [
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-g",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-jz",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-nqrw",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-l",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
 ];
 
-// Station + stops
-const STATION_NAME = '116 St';
+// Map: LINE -> FEED URL
+// Note: S appears in multiple docs; for practical use we map S to the main "gtfs" feed.
+const FEED_BY_LINE = {
+  // ACE
+  A: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace",
+  C: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace",
+  E: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace",
 
-const STOPS = [
-  { id: 'A16S', label: 'C/B 116th South' },
-  { id: '226S', label: '1/2 116th South' }
-];
+  // BDFM
+  B: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
+  D: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
+  F: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
+  M: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
 
-// Fetch + decode ALL feeds
-async function fetchAllFeeds() {
-  const results = await Promise.all(
-    FEED_URLS.map(async (url) => {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`MTA feed error: ${res.status} ${res.statusText}`);
-      const buffer = await res.arrayBuffer();
-      return GtfsRealtimeBindings
-        .transit_realtime
-        .FeedMessage
-        .decode(new Uint8Array(buffer));
-    })
-  );
-  return results;
+  // G
+  G: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-g",
+
+  // JZ
+  J: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-jz",
+  Z: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-jz",
+
+  // NQRW
+  N: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-nqrw",
+  Q: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-nqrw",
+  R: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-nqrw",
+  W: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-nqrw",
+
+  // L
+  L: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-l",
+
+  // 1-7 + S (shuttle)
+  "1": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "2": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "3": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "4": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "5": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "6": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  "7": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+  S: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+
+  // Staten Island Railway
+  SIR: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
+};
+
+// ---------- helpers ----------
+function asArrayParam(v) {
+  if (v == null) return [];
+  return Array.isArray(v) ? v : [v];
 }
 
-// Extract departures
-function filterDeparturesForStops(feeds, stopIds) {
+function normalizeLine(x) {
+  return String(x || "").trim().toUpperCase();
+}
+
+function readStationsUi() {
+  const p = path.join(process.cwd(), "stations-ui.json");
+  if (!fs.existsSync(p)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(p, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+function pickFeedUrlsForLines(lines) {
+  const wanted = (lines || []).map(normalizeLine).filter(Boolean);
+  if (!wanted.length) return ALL_FEEDS;
+
+  const set = new Set();
+  for (const l of wanted) {
+    const u = FEED_BY_LINE[l];
+    if (u) set.add(u);
+  }
+  // Fallback: if user sent weird lines we don’t recognize, fetch all
+  return set.size ? Array.from(set) : ALL_FEEDS;
+}
+
+// ---------- fetch + decode only needed feeds ----------
+async function fetchFeedsForLines(lines) {
+  const urls = pickFeedUrlsForLines(lines);
+
+  const headers = {};
+  if (MTA_API_KEY) headers["x-api-key"] = MTA_API_KEY;
+
+  const feeds = await Promise.all(
+    urls.map(async (url) => {
+      const res = await fetch(url, { headers });
+      if (!res.ok) throw new Error(`MTA feed error: ${res.status} ${res.statusText}`);
+      const buffer = await res.arrayBuffer();
+      return GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(new Uint8Array(buffer));
+    })
+  );
+
+  return feeds;
+}
+
+// ---------- extract departures (stopId required, optional line filter) ----------
+function filterDeparturesForStops(feeds, stopIds, allowedLines = []) {
   const nowSec = Math.floor(Date.now() / 1000);
   const departures = [];
 
-  feeds.forEach(feed => {
-    feed.entity.forEach(entity => {
+  const stopSet = new Set(stopIds.map(String));
+  const allowSet = new Set((allowedLines || []).map(normalizeLine).filter(Boolean));
+
+  // Dedupe across feeds (some overlap happens occasionally)
+  const seen = new Set(); // key: route|stop|timestamp|tripId (tripId optional)
+
+  feeds.forEach((feed) => {
+    feed.entity.forEach((entity) => {
       if (!entity.tripUpdate || !entity.tripUpdate.stopTimeUpdate) return;
 
-      const routeId = entity.tripUpdate.trip.routeId;
-      entity.tripUpdate.stopTimeUpdate.forEach(stu => {
-        if (!stopIds.includes(stu.stopId)) return;
+      const routeId = normalizeLine(entity.tripUpdate.trip?.routeId);
+      if (allowSet.size && !allowSet.has(routeId)) return;
+
+      const tripId =
+        entity.tripUpdate.trip?.tripId ||
+        entity.tripUpdate.trip?.trip_id ||
+        "";
+
+      entity.tripUpdate.stopTimeUpdate.forEach((stu) => {
+        const stopId = stu.stopId;
+        if (!stopId || !stopSet.has(stopId)) return;
 
         const t =
           stu.arrival?.time?.toNumber?.() ??
@@ -60,11 +157,15 @@ function filterDeparturesForStops(feeds, stopIds) {
         const etaSec = t - nowSec;
         if (etaSec < 0) return;
 
+        const key = `${routeId}|${stopId}|${t}|${tripId}`;
+        if (seen.has(key)) return;
+        seen.add(key);
+
         departures.push({
           routeId,
-          stopId: stu.stopId,
+          stopId,
           timestamp: t,
-          etaMinutes: Math.round(etaSec / 60)
+          etaMinutes: Math.round(etaSec / 60),
         });
       });
     });
@@ -74,244 +175,340 @@ function filterDeparturesForStops(feeds, stopIds) {
   return departures;
 }
 
-// JSON API
-app.get('/mta', async (req, res) => {
+// ---------- API: /mta ----------
+// Examples:
+//   /mta?stopId=226S
+//   /mta?stopId=226S&line=1
+//   /mta?stopId=226S&stopId=A16S&line=1&line=2
+app.get("/mta", async (req, res) => {
   try {
-    const stopIds = Array.isArray(req.query.stopId)
-      ? req.query.stopId
-      : req.query.stopId
-        ? [req.query.stopId]
-        : [];
+    const stopIds = asArrayParam(req.query.stopId).map(String).filter(Boolean);
+    const lines = asArrayParam(req.query.line).map(String).filter(Boolean);
 
-    if (!stopIds.length) return res.status(400).json({ error: 'Provide stopId' });
+    if (!stopIds.length) return res.status(400).json({ error: "Provide stopId" });
 
-    const feeds = await fetchAllFeeds();
-    const departures = filterDeparturesForStops(feeds, stopIds);
+    // ✅ fetch only the feeds needed for the requested line(s)
+    const feeds = await fetchFeedsForLines(lines);
+    const departures = filterDeparturesForStops(feeds, stopIds, lines);
 
     res.json({
       stops: stopIds,
+      lines: lines.map(normalizeLine),
       lastUpdated: new Date().toISOString(),
-      departures
+      departures,
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
+// ---------- API: stations for dropdowns ----------
+app.get("/api/stations", (req, res) => {
+  const data = readStationsUi();
+  if (!data) {
+    return res.status(404).json({
+      error:
+        "stations-ui.json not found. Generate it (with borough + directions + displayName) and place it in the project root.",
+    });
+  }
+  res.json(data);
+});
 
-//
-// ========= MODERN DARK BOARD =========
-//
-app.get('/station/116', (req, res) => {
-  const stopsJson = JSON.stringify(STOPS);
+// ---------- UI: Borough -> Station -> Direction -> Line (optional) ----------
+app.get("/", (req, res) => {
   res.send(`<!doctype html>
 <html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Your next train</title>
-<style>
-:root { color-scheme: dark; }
-* { box-sizing: border-box; }
-body {
-  background:#05060a; color:#f0f6fc;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  margin:0; padding:12px;
-  display:flex; justify-content:center; min-height:100vh;
-}
-.container { max-width:1000px; width:100%; display:flex; flex-direction:column; gap:12px; }
-.top-header h1 { margin:0; font-size:2rem; letter-spacing:.03em; }
-.station-label { color:#8b949e; font-size:.9rem; }
-.layout { display:grid; grid-template-columns:1fr; gap:10px; }
-@media(min-width:700px){ .layout{grid-template-columns:1fr 1fr;} }
-.board {
-  background:#11151d; border-radius:16px; padding:16px 18px;
-  box-shadow:0 14px 35px rgba(0,0,0,.65);
-}
-.subtitle{margin:0 0 8px;font-size:1.1rem;font-weight:600;}
-.updated{color:#8b949e;font-size:.75rem;}
-table{width:100%;border-collapse:collapse;}
-th,td{padding:6px 2px;font-size:1rem;}
-th{color:#8b949e;border-bottom:1px solid #30363d;}
-tr+tr td{border-top:1px solid #21262d;}
-.route-pill{
-  display:inline-flex;align-items:center;justify-content:center;
-  min-width:28px;height:28px;border-radius:999px;
-  font-size:.9rem;font-weight:700;color:#fff;padding:0 10px;
-}
-.route-blue{background:#0039A6;}
-.route-orange{background:#FF6319;}
-.route-red{background:#EE352E;}
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="top-header">
-    <h1>Your next train</h1>
-    <div class="station-label">${STATION_NAME}</div>
-  </div>
-  <div class="layout">
-    ${STOPS.map(s=>`
-      <div class="board">
-        <p class="subtitle">${s.label}</p>
-        <div class="updated" id="updated-${s.id}">Loading…</div>
-        <table>
-          <thead><tr><th>Route</th><th>ETA</th></tr></thead>
-          <tbody id="tbody-${s.id}">
-            <tr><td colspan="2">Loading…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    `).join('')}
-  </div>
-</div>
-
-<script>
-const STOPS=${stopsJson};
-
-function cls(route){
-  route=String(route||'').toUpperCase();
-  if(['A','C'].includes(route))return'route-pill route-blue';
-  if(['B','D'].includes(route))return'route-pill route-orange';
-  if(['1','2','3'].includes(route))return'route-pill route-red';
-  return'route-pill';
-}
-
-async function load(stop){
-  const r=await fetch('/mta?stopId='+stop.id);
-  const d=await r.json();
-  const b=document.getElementById('tbody-'+stop.id);
-  const u=document.getElementById('updated-'+stop.id);
-  b.innerHTML='';
-  (d.departures||[]).slice(0,3).forEach(dep=>{
-    const tr=document.createElement('tr');
-    tr.innerHTML=\`
-      <td><span class="\${cls(dep.routeId)}">\${dep.routeId||'?'}</span></td>
-      <td>\${dep.etaMinutes} min</td>\`;
-    b.appendChild(tr);
-  });
-  if(!b.innerHTML) b.innerHTML='<tr><td colspan="2">No trains</td></tr>';
-  u.textContent='Last updated: '+new Date().toLocaleTimeString();
-}
-
-function all(){ STOPS.forEach(load); }
-all(); setInterval(all,60000);
-</script>
-</body>
-</html>`);
-});
-
-
-//
-// ========= RETRO MOODY BOARD =========
-//
-app.get('/station/116/retro', (req,res)=>{
-  const stopsJson = JSON.stringify(STOPS);
-  res.send(`<!doctype html>
-<html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Your next train</title>
+<title>MTA Board</title>
 <style>
 :root{color-scheme:dark;}
 *{box-sizing:border-box;}
 body{
-  margin:0;padding:14px;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont;
-  background:
-    radial-gradient(circle at top left,#3b2533 0,transparent 55%),
-    radial-gradient(circle at bottom right,#10272f 0,transparent 55%),
-    #07060a;
-  color:#f7f3eb;
-  display:flex;justify-content:center;min-height:100vh;
+  background:#05060a;color:#f0f6fc;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
+  margin:0;padding:16px;display:flex;justify-content:center;min-height:100vh;
 }
-.container{max-width:1000px;width:100%;display:flex;flex-direction:column;gap:12px;}
-.top-header h1{margin:0;font-size:2rem;letter-spacing:.18em;text-transform:uppercase;}
-.station-label{color:#d1c4aa;text-transform:uppercase;font-size:.9rem;letter-spacing:.08em;}
-.layout{display:grid;grid-template-columns:1fr;gap:12px;}
-@media(min-width:720px){.layout{grid-template-columns:1fr 1fr;}}
-.board{
-  background:linear-gradient(135deg,#171219,#121a22);
-  border-radius:18px;
-  padding:16px;
-  box-shadow:0 18px 45px rgba(0,0,0,.7);
+.container{max-width:1100px;width:100%;display:flex;flex-direction:column;gap:14px;}
+h1{margin:0;font-size:1.8rem;letter-spacing:.02em;}
+.panel,.board{
+  background:#11151d;border-radius:16px;padding:14px 14px;
+  box-shadow:0 14px 35px rgba(0,0,0,.65);
 }
-.subtitle{text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px;}
+.controls{display:grid;grid-template-columns:1fr;gap:10px;}
+@media(min-width:900px){.controls{grid-template-columns:1.1fr 1.6fr 1fr 1.2fr;}}
+label{font-size:.82rem;color:#8b949e;display:block;margin:0 0 6px;}
+select{
+  width:100%;padding:10px;border-radius:12px;
+  border:1px solid #30363d;background:#0b0f17;color:#f0f6fc;font-size:14px;
+}
+.hint{color:#8b949e;font-size:.8rem;margin-top:6px;}
+.meta{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;}
+.meta .title{font-size:1.25rem;font-weight:800;}
+.meta .sub{color:#8b949e;font-size:.85rem;}
+table{width:100%;border-collapse:collapse;margin-top:10px;}
+th,td{padding:8px 2px;font-size:1rem;}
+th{color:#8b949e;border-bottom:1px solid #30363d;text-align:left;}
+tr+tr td{border-top:1px solid #21262d;}
 .route-pill{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:30px;height:30px;border-radius:999px;
-  color:#fff;font-weight:800;padding:0 12px;
+  font-size:.95rem;font-weight:900;color:#fff;padding:0 12px;
+  background:#30363d;
 }
-.route-blue{background:#0039A6;}
-.route-orange{background:#FF6319;}
-.route-red{background:#EE352E;}
+
+/* Line colors */
+.route-blue{ background:#0039A6; }      /* A/C/E */
+.route-orange{ background:#FF6319; }    /* B/D/F/M */
+.route-grey{ background:#6c757d; }      /* S */
+.route-brightgreen{ background:#00A550; } /* G (bright green) */
+.route-brown{ background:#996633; }     /* J/Z */
+.route-yellow{ background:#FCCC0A; color:#111; } /* N/Q/R/W */
+.route-lightgrey{ background:#A7A9AC; color:#111; } /* L */
+.route-red{ background:#EE352E; }       /* 1/2/3 */
+.route-green{ background:#00933C; }     /* 4/5/6 */
+.route-purple{ background:#B933AD; }    /* 7 */
+.route-lightblue{ background:#5DA9E9; color:#111; } /* SIR */
+
+.footerRow{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:8px;}
+button{
+  padding:10px 12px;border-radius:12px;border:1px solid #30363d;
+  background:#0b0f17;color:#f0f6fc;cursor:pointer;font-weight:800;
+}
+button:hover{background:#0f1624;}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="top-header">
-    <h1>Your next train</h1>
-    <div class="station-label">${STATION_NAME}</div>
-  </div>
-  <div class="layout">
-    ${STOPS.map(s=>`
-      <div class="board">
-        <p class="subtitle">${s.label}</p>
-        <div id="updated-${s.id}">Loading…</div>
-        <table width="100%">
-          <thead><tr><th>Route</th><th>ETA</th></tr></thead>
-          <tbody id="tbody-${s.id}">
-            <tr><td colspan="2">Loading…</td></tr>
-          </tbody>
-        </table>
+  <h1>MTA Board</h1>
+
+  <div class="panel">
+    <div class="controls">
+      <div>
+        <label for="borough">Borough</label>
+        <select id="borough"></select>
       </div>
-    `).join('')}
+      <div>
+        <label for="station">Station</label>
+        <select id="station" disabled></select>
+      </div>
+      <div>
+        <label for="direction">Direction</label>
+        <select id="direction" disabled></select>
+        <div class="hint">Shown only if N/S stop IDs exist.</div>
+      </div>
+      <div>
+        <label for="line">Line (optional)</label>
+        <select id="line" disabled></select>
+        <div class="hint">Choose one line, or leave blank for all lines.</div>
+      </div>
+    </div>
+    <div class="footerRow">
+      <div class="hint" id="status">Loading stations…</div>
+      <button id="refresh">Refresh</button>
+    </div>
+  </div>
+
+  <div class="board" id="board" style="display:none;">
+    <div class="meta">
+      <div class="title">Your next train</div>
+      <div class="sub" id="subtitle"></div>
+    </div>
+    <div class="hint" id="updated" style="margin-top:6px;"> </div>
+    <table>
+      <thead><tr><th>Route</th><th>Stop</th><th>ETA</th></tr></thead>
+      <tbody id="tbody">
+        <tr><td colspan="3">Choose a borough and station…</td></tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
 <script>
-const STOPS=${stopsJson};
+const boroughSel = document.getElementById("borough");
+const stationSel = document.getElementById("station");
+const dirSel = document.getElementById("direction");
+const lineSel = document.getElementById("line");
+const statusEl = document.getElementById("status");
+const refreshBtn = document.getElementById("refresh");
 
-function cls(route){
-  route=String(route||'').toUpperCase();
-  if(['A','C'].includes(route))return'route-pill route-blue';
-  if(['B','D'].includes(route))return'route-pill route-orange';
-  if(['1','2','3'].includes(route))return'route-pill route-red';
-  return'route-pill';
+const board = document.getElementById("board");
+const tbody = document.getElementById("tbody");
+const updated = document.getElementById("updated");
+const subtitle = document.getElementById("subtitle");
+
+let stations = [];
+let filteredStations = [];
+
+function unique(arr){ return Array.from(new Set(arr)).sort((a,b)=>a.localeCompare(b, undefined, {sensitivity:"base"})); }
+
+function setOptions(select, items, placeholder){
+  select.innerHTML = "";
+  const ph = document.createElement("option");
+  ph.value = "";
+  ph.textContent = placeholder;
+  select.appendChild(ph);
+  for(const it of items){
+    const o = document.createElement("option");
+    o.value = it.value;
+    o.textContent = it.label;
+    select.appendChild(o);
+  }
 }
 
-async function load(stop){
-  const r=await fetch('/mta?stopId='+stop.id);
-  const d=await r.json();
-  const b=document.getElementById('tbody-'+stop.id);
-  const u=document.getElementById('updated-'+stop.id);
-  b.innerHTML='';
-  (d.departures||[]).slice(0,3).forEach(dep=>{
-    const tr=document.createElement('tr');
-    tr.innerHTML=\`
-      <td><span class="\${cls(dep.routeId)}">\${dep.routeId||'?'}</span></td>
+function resetDownstream(){
+  stationSel.disabled = true;
+  dirSel.disabled = true;
+  lineSel.disabled = true;
+  setOptions(stationSel, [], "Choose station");
+  setOptions(dirSel, [], "Choose direction");
+  setOptions(lineSel, [], "Choose line (optional)");
+}
+
+function selectedStation(){
+  const id = stationSel.value;
+  return filteredStations.find(s => String(s.id) === String(id));
+}
+
+async function loadStations(){
+  statusEl.textContent = "Loading stations…";
+  const r = await fetch("/api/stations");
+  if(!r.ok){
+    statusEl.textContent = "Missing stations-ui.json (generate it and restart).";
+    return;
+  }
+  stations = await r.json();
+
+  const boroughs = unique(stations.map(s => s.borough).filter(b => b && b !== "Unknown"));
+  setOptions(boroughSel, boroughs.map(b => ({value:b, label:b})), "Choose borough");
+
+  statusEl.textContent = "Pick borough → station → direction → line.";
+}
+
+boroughSel.addEventListener("change", () => {
+  resetDownstream();
+  const b = boroughSel.value;
+  if(!b) return;
+
+  filteredStations = stations.filter(s => s.borough === b);
+  stationSel.disabled = false;
+  setOptions(
+    stationSel,
+    filteredStations.map(s => ({ value: s.id, label: s.displayName || s.name })),
+    "Choose station"
+  );
+});
+
+stationSel.addEventListener("change", () => {
+  dirSel.disabled = true;
+  lineSel.disabled = true;
+  setOptions(dirSel, [], "Choose direction");
+  setOptions(lineSel, [], "Choose line (optional)");
+
+  const s = selectedStation();
+  if(!s) return;
+
+  // Directions: only enable if we actually have N and/or S stopIds
+  const dirs = (s.directions || []);
+  if(dirs.length > 1){
+    dirSel.disabled = false;
+    setOptions(dirSel, dirs.map(d => ({ value: d.stopId, label: d.dir })), "Choose direction");
+  }
+
+  // Lines: optional single selection (leave blank for all)
+  lineSel.disabled = false;
+  setOptions(lineSel, (s.lines || []).map(l => ({ value:l, label:l })), "Choose line (optional)");
+
+  refresh();
+});
+
+dirSel.addEventListener("change", refresh);
+lineSel.addEventListener("change", refresh);
+refreshBtn.addEventListener("click", refresh);
+
+function pill(route){
+  route = String(route || "").toUpperCase().trim();
+
+  if(["A","C","E"].includes(route)) return "route-pill route-blue";
+  if(["B","D","F","M"].includes(route)) return "route-pill route-orange";
+  if(route === "S") return "route-pill route-grey";
+  if(route === "G") return "route-pill route-brightgreen";
+  if(["J","Z"].includes(route)) return "route-pill route-brown";
+  if(["N","Q","R","W"].includes(route)) return "route-pill route-yellow";
+  if(route === "L") return "route-pill route-lightgrey";
+  if(["1","2","3"].includes(route)) return "route-pill route-red";
+  if(["4","5","6"].includes(route)) return "route-pill route-green";
+  if(route === "7") return "route-pill route-purple";
+  if(route === "SIR") return "route-pill route-lightblue";
+
+  return "route-pill";
+}
+
+
+async function refresh(){
+  const s = selectedStation();
+  if(!s){
+    board.style.display = "none";
+    return;
+  }
+
+  board.style.display = "block";
+  subtitle.textContent = (s.borough ? s.borough + " • " : "") + (s.displayName || s.name);
+
+  const chosenStopId = dirSel.value || s.id; // direction stopId if chosen else station id fallback
+  const chosenLine = lineSel.value || "";
+
+  statusEl.textContent = "Loading departures…";
+  tbody.innerHTML = '<tr><td colspan="3">Loading…</td></tr>';
+
+  const url = new URL(location.origin + "/mta");
+  url.searchParams.append("stopId", chosenStopId);
+  if (chosenLine) url.searchParams.append("line", chosenLine);
+
+  const r = await fetch(url.toString());
+  const d = await r.json();
+
+  const deps = (d.departures || []).slice(0, 12);
+  tbody.innerHTML = "";
+
+  for(const dep of deps){
+    const tr = document.createElement("tr");
+    tr.innerHTML = \`
+      <td><span class="\${pill(dep.routeId)}">\${dep.routeId || "?"}</span></td>
+      <td>\${dep.stopId}</td>
       <td>\${dep.etaMinutes} min</td>\`;
-    b.appendChild(tr);
-  });
-  if(!b.innerHTML) b.innerHTML='<tr><td colspan="2">No trains</td></tr>';
-  u.textContent='Last updated: '+new Date().toLocaleTimeString();
+    tbody.appendChild(tr);
+  }
+
+  if(!deps.length){
+    tbody.innerHTML = '<tr><td colspan="3">No upcoming trains found.</td></tr>';
+  }
+
+  updated.textContent = "Last updated: " + new Date().toLocaleTimeString();
+  statusEl.textContent = "Ready.";
 }
 
-function all(){ STOPS.forEach(load); }
-all(); setInterval(all,60000);
+// Boot
+resetDownstream();
+loadStations().catch(err => {
+  console.error(err);
+  statusEl.textContent = "Failed to load stations.";
+});
+
+// Auto refresh every 60s if board visible
+setInterval(() => {
+  if(board.style.display !== "none") refresh();
+}, 60000);
 </script>
 </body>
 </html>`);
 });
 
+// ---------- start ----------
 
-// HOME
-app.get('/',(req,res)=>{
-  res.send('Try /station/116 or /station/116/retro');
-});
-
-app.listen(PORT,()=>{
-  console.log('Server listening on port '+PORT);
+app.listen(PORT, () => {
+  console.log("Server listening on port " + PORT);
+  console.log("MTA GTFS-Realtime feeds: public access enabled");
 });

@@ -1,0 +1,9954 @@
+[
+  {
+    "id": "L06",
+    "name": "1 Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L06S"
+      }
+    ],
+    "displayName": "1 Av"
+  },
+  {
+    "id": "119",
+    "name": "103 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "119N"
+      },
+      {
+        "dir": "S",
+        "stopId": "119S"
+      }
+    ],
+    "displayName": "103 St (1)"
+  },
+  {
+    "id": "624",
+    "name": "103 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "624N"
+      },
+      {
+        "dir": "S",
+        "stopId": "624S"
+      }
+    ],
+    "displayName": "103 St (4, 6, 6X)"
+  },
+  {
+    "id": "A18",
+    "name": "103 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A18S"
+      }
+    ],
+    "displayName": "103 St (A, B, C)"
+  },
+  {
+    "id": "706",
+    "name": "103 St-Corona Plaza",
+    "lines": [
+      "7"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "706N"
+      },
+      {
+        "dir": "S",
+        "stopId": "706S"
+      }
+    ],
+    "displayName": "103 St-Corona Plaza"
+  },
+  {
+    "id": "A63",
+    "name": "104 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A63N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A63S"
+      }
+    ],
+    "displayName": "104 St (A)"
+  },
+  {
+    "id": "J14",
+    "name": "104 St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J14S"
+      }
+    ],
+    "displayName": "104 St (J, Z)"
+  },
+  {
+    "id": "623",
+    "name": "110 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "623N"
+      },
+      {
+        "dir": "S",
+        "stopId": "623S"
+      }
+    ],
+    "displayName": "110 St"
+  },
+  {
+    "id": "227",
+    "name": "110 St-Malcolm X Plaza",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "227N"
+      },
+      {
+        "dir": "S",
+        "stopId": "227S"
+      }
+    ],
+    "displayName": "110 St-Malcolm X Plaza"
+  },
+  {
+    "id": "705",
+    "name": "111 St",
+    "lines": [
+      "7"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "705N"
+      },
+      {
+        "dir": "S",
+        "stopId": "705S"
+      }
+    ],
+    "displayName": "111 St (7)"
+  },
+  {
+    "id": "A64",
+    "name": "111 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A64N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A64S"
+      }
+    ],
+    "displayName": "111 St (A)"
+  },
+  {
+    "id": "J13",
+    "name": "111 St",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J13S"
+      }
+    ],
+    "displayName": "111 St (J)"
+  },
+  {
+    "id": "226",
+    "name": "116 St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "226N"
+      },
+      {
+        "dir": "S",
+        "stopId": "226S"
+      }
+    ],
+    "displayName": "116 St (2, 3)"
+  },
+  {
+    "id": "622",
+    "name": "116 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "622N"
+      },
+      {
+        "dir": "S",
+        "stopId": "622S"
+      }
+    ],
+    "displayName": "116 St (4, 6, 6X)"
+  },
+  {
+    "id": "A16",
+    "name": "116 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A16S"
+      }
+    ],
+    "displayName": "116 St (A, B, C)"
+  },
+  {
+    "id": "117",
+    "name": "116 St-Columbia University",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "117N"
+      },
+      {
+        "dir": "S",
+        "stopId": "117S"
+      }
+    ],
+    "displayName": "116 St-Columbia University"
+  },
+  {
+    "id": "J12",
+    "name": "121 St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J12S"
+      }
+    ],
+    "displayName": "121 St"
+  },
+  {
+    "id": "116",
+    "name": "125 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "116N"
+      },
+      {
+        "dir": "S",
+        "stopId": "116S"
+      }
+    ],
+    "displayName": "125 St (1)"
+  },
+  {
+    "id": "225",
+    "name": "125 St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "225N"
+      },
+      {
+        "dir": "S",
+        "stopId": "225S"
+      }
+    ],
+    "displayName": "125 St (2, 3)"
+  },
+  {
+    "id": "621",
+    "name": "125 St",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "621N"
+      },
+      {
+        "dir": "S",
+        "stopId": "621S"
+      }
+    ],
+    "displayName": "125 St (4, 5, 6, 6X)"
+  },
+  {
+    "id": "A15",
+    "name": "125 St",
+    "lines": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A15S"
+      }
+    ],
+    "displayName": "125 St (A, B, C, D)"
+  },
+  {
+    "id": "224",
+    "name": "135 St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "224N"
+      },
+      {
+        "dir": "S",
+        "stopId": "224S"
+      }
+    ],
+    "displayName": "135 St (2, 3)"
+  },
+  {
+    "id": "A14",
+    "name": "135 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A14S"
+      }
+    ],
+    "displayName": "135 St (A, B, C)"
+  },
+  {
+    "id": "115",
+    "name": "137 St-City College",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "115N"
+      },
+      {
+        "dir": "S",
+        "stopId": "115S"
+      }
+    ],
+    "displayName": "137 St-City College"
+  },
+  {
+    "id": "416",
+    "name": "138 St-Grand Concourse",
+    "lines": [
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "416N"
+      },
+      {
+        "dir": "S",
+        "stopId": "416S"
+      }
+    ],
+    "displayName": "138 St-Grand Concourse"
+  },
+  {
+    "id": "132",
+    "name": "14 St",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "132N"
+      },
+      {
+        "dir": "S",
+        "stopId": "132S"
+      }
+    ],
+    "displayName": "14 St (1, 2, 3)"
+  },
+  {
+    "id": "A31",
+    "name": "14 St",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A31S"
+      }
+    ],
+    "displayName": "14 St (A, C, E)"
+  },
+  {
+    "id": "D19",
+    "name": "14 St",
+    "lines": [
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D19S"
+      }
+    ],
+    "displayName": "14 St (F, FX, M)"
+  },
+  {
+    "id": "635",
+    "name": "14 St-Union Sq",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "635N"
+      },
+      {
+        "dir": "S",
+        "stopId": "635S"
+      }
+    ],
+    "displayName": "14 St-Union Sq (4, 5, 6, 6X)"
+  },
+  {
+    "id": "L03",
+    "name": "14 St-Union Sq",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L03S"
+      }
+    ],
+    "displayName": "14 St-Union Sq (L)"
+  },
+  {
+    "id": "R20",
+    "name": "14 St-Union Sq",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R20S"
+      }
+    ],
+    "displayName": "14 St-Union Sq (N, Q, R, W)"
+  },
+  {
+    "id": "114",
+    "name": "145 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "114N"
+      },
+      {
+        "dir": "S",
+        "stopId": "114S"
+      }
+    ],
+    "displayName": "145 St (1)"
+  },
+  {
+    "id": "302",
+    "name": "145 St",
+    "lines": [
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "302N"
+      },
+      {
+        "dir": "S",
+        "stopId": "302S"
+      }
+    ],
+    "displayName": "145 St (3)"
+  },
+  {
+    "id": "A12",
+    "name": "145 St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A12S"
+      }
+    ],
+    "displayName": "145 St (A, C)"
+  },
+  {
+    "id": "D13",
+    "name": "145 St",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D13S"
+      }
+    ],
+    "displayName": "145 St (B, D)"
+  },
+  {
+    "id": "222",
+    "name": "149 St-Grand Concourse",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "222N"
+      },
+      {
+        "dir": "S",
+        "stopId": "222S"
+      }
+    ],
+    "displayName": "149 St-Grand Concourse (2, 5)"
+  },
+  {
+    "id": "415",
+    "name": "149 St-Grand Concourse",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "415N"
+      },
+      {
+        "dir": "S",
+        "stopId": "415S"
+      }
+    ],
+    "displayName": "149 St-Grand Concourse (4)"
+  },
+  {
+    "id": "F25",
+    "name": "15 St-Prospect Park",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F25S"
+      }
+    ],
+    "displayName": "15 St-Prospect Park"
+  },
+  {
+    "id": "A11",
+    "name": "155 St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A11S"
+      }
+    ],
+    "displayName": "155 St (A, C)"
+  },
+  {
+    "id": "D12",
+    "name": "155 St",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D12S"
+      }
+    ],
+    "displayName": "155 St (B, D)"
+  },
+  {
+    "id": "113",
+    "name": "157 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "113N"
+      },
+      {
+        "dir": "S",
+        "stopId": "113S"
+      }
+    ],
+    "displayName": "157 St"
+  },
+  {
+    "id": "414",
+    "name": "161 St-Yankee Stadium",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "414N"
+      },
+      {
+        "dir": "S",
+        "stopId": "414S"
+      }
+    ],
+    "displayName": "161 St-Yankee Stadium (4)"
+  },
+  {
+    "id": "D11",
+    "name": "161 St-Yankee Stadium",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D11S"
+      }
+    ],
+    "displayName": "161 St-Yankee Stadium (B, D)"
+  },
+  {
+    "id": "A10",
+    "name": "163 St-Amsterdam Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A10S"
+      }
+    ],
+    "displayName": "163 St-Amsterdam Av"
+  },
+  {
+    "id": "413",
+    "name": "167 St",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "413N"
+      },
+      {
+        "dir": "S",
+        "stopId": "413S"
+      }
+    ],
+    "displayName": "167 St (4)"
+  },
+  {
+    "id": "D10",
+    "name": "167 St",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D10S"
+      }
+    ],
+    "displayName": "167 St (B, D)"
+  },
+  {
+    "id": "A09",
+    "name": "168 St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A09S"
+      }
+    ],
+    "displayName": "168 St"
+  },
+  {
+    "id": "112",
+    "name": "168 St-Washington Hts",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "112N"
+      },
+      {
+        "dir": "S",
+        "stopId": "112S"
+      }
+    ],
+    "displayName": "168 St-Washington Hts"
+  },
+  {
+    "id": "F02",
+    "name": "169 St",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F02N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F02S"
+      }
+    ],
+    "displayName": "169 St"
+  },
+  {
+    "id": "412",
+    "name": "170 St",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "412N"
+      },
+      {
+        "dir": "S",
+        "stopId": "412S"
+      }
+    ],
+    "displayName": "170 St (4)"
+  },
+  {
+    "id": "D09",
+    "name": "170 St",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D09S"
+      }
+    ],
+    "displayName": "170 St (B, D)"
+  },
+  {
+    "id": "215",
+    "name": "174 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "215N"
+      },
+      {
+        "dir": "S",
+        "stopId": "215S"
+      }
+    ],
+    "displayName": "174 St"
+  },
+  {
+    "id": "D08",
+    "name": "174-175 Sts",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D08S"
+      }
+    ],
+    "displayName": "174-175 Sts"
+  },
+  {
+    "id": "A07",
+    "name": "175 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A07S"
+      }
+    ],
+    "displayName": "175 St"
+  },
+  {
+    "id": "410",
+    "name": "176 St",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "410N"
+      },
+      {
+        "dir": "S",
+        "stopId": "410S"
+      }
+    ],
+    "displayName": "176 St"
+  },
+  {
+    "id": "B19",
+    "name": "18 Av",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B19S"
+      }
+    ],
+    "displayName": "18 Av (D)"
+  },
+  {
+    "id": "F30",
+    "name": "18 Av",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F30S"
+      }
+    ],
+    "displayName": "18 Av (F, FX)"
+  },
+  {
+    "id": "N05",
+    "name": "18 Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N05S"
+      }
+    ],
+    "displayName": "18 Av (N, W)"
+  },
+  {
+    "id": "131",
+    "name": "18 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "131N"
+      },
+      {
+        "dir": "S",
+        "stopId": "131S"
+      }
+    ],
+    "displayName": "18 St"
+  },
+  {
+    "id": "111",
+    "name": "181 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "111N"
+      },
+      {
+        "dir": "S",
+        "stopId": "111S"
+      }
+    ],
+    "displayName": "181 St (1)"
+  },
+  {
+    "id": "A06",
+    "name": "181 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A06S"
+      }
+    ],
+    "displayName": "181 St (A)"
+  },
+  {
+    "id": "D06",
+    "name": "182-183 Sts",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D06S"
+      }
+    ],
+    "displayName": "182-183 Sts"
+  },
+  {
+    "id": "408",
+    "name": "183 St",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "408N"
+      },
+      {
+        "dir": "S",
+        "stopId": "408S"
+      }
+    ],
+    "displayName": "183 St"
+  },
+  {
+    "id": "A05",
+    "name": "190 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A05S"
+      }
+    ],
+    "displayName": "190 St"
+  },
+  {
+    "id": "110",
+    "name": "191 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "110N"
+      },
+      {
+        "dir": "S",
+        "stopId": "110S"
+      }
+    ],
+    "displayName": "191 St"
+  },
+  {
+    "id": "F14",
+    "name": "2 Av",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F14S"
+      }
+    ],
+    "displayName": "2 Av"
+  },
+  {
+    "id": "B20",
+    "name": "20 Av",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B20S"
+      }
+    ],
+    "displayName": "20 Av (D)"
+  },
+  {
+    "id": "N06",
+    "name": "20 Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N06S"
+      }
+    ],
+    "displayName": "20 Av (N, W)"
+  },
+  {
+    "id": "108",
+    "name": "207 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "108N"
+      },
+      {
+        "dir": "S",
+        "stopId": "108S"
+      }
+    ],
+    "displayName": "207 St"
+  },
+  {
+    "id": "G24",
+    "name": "21 St",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G24S"
+      }
+    ],
+    "displayName": "21 St"
+  },
+  {
+    "id": "B04",
+    "name": "21 St-Queensbridge",
+    "lines": [
+      "F",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B04S"
+      }
+    ],
+    "displayName": "21 St-Queensbridge"
+  },
+  {
+    "id": "107",
+    "name": "215 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "107N"
+      },
+      {
+        "dir": "S",
+        "stopId": "107S"
+      }
+    ],
+    "displayName": "215 St"
+  },
+  {
+    "id": "207",
+    "name": "219 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "207N"
+      },
+      {
+        "dir": "S",
+        "stopId": "207S"
+      }
+    ],
+    "displayName": "219 St"
+  },
+  {
+    "id": "206",
+    "name": "225 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "206N"
+      },
+      {
+        "dir": "S",
+        "stopId": "206S"
+      }
+    ],
+    "displayName": "225 St"
+  },
+  {
+    "id": "130",
+    "name": "23 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "130N"
+      },
+      {
+        "dir": "S",
+        "stopId": "130S"
+      }
+    ],
+    "displayName": "23 St (1, 2)"
+  },
+  {
+    "id": "A30",
+    "name": "23 St",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A30S"
+      }
+    ],
+    "displayName": "23 St (A, C, E)"
+  },
+  {
+    "id": "D18",
+    "name": "23 St",
+    "lines": [
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D18S"
+      }
+    ],
+    "displayName": "23 St (F, FX, M)"
+  },
+  {
+    "id": "R19",
+    "name": "23 St",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R19S"
+      }
+    ],
+    "displayName": "23 St (N, Q, R, W)"
+  },
+  {
+    "id": "634",
+    "name": "23 St-Baruch College",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "634N"
+      },
+      {
+        "dir": "S",
+        "stopId": "634S"
+      }
+    ],
+    "displayName": "23 St-Baruch College"
+  },
+  {
+    "id": "104",
+    "name": "231 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "104N"
+      },
+      {
+        "dir": "S",
+        "stopId": "104S"
+      }
+    ],
+    "displayName": "231 St"
+  },
+  {
+    "id": "205",
+    "name": "233 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "205N"
+      },
+      {
+        "dir": "S",
+        "stopId": "205S"
+      }
+    ],
+    "displayName": "233 St"
+  },
+  {
+    "id": "103",
+    "name": "238 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "103N"
+      },
+      {
+        "dir": "S",
+        "stopId": "103S"
+      }
+    ],
+    "displayName": "238 St"
+  },
+  {
+    "id": "B22",
+    "name": "25 Av",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B22S"
+      }
+    ],
+    "displayName": "25 Av"
+  },
+  {
+    "id": "R35",
+    "name": "25 St",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R35N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R35S"
+      }
+    ],
+    "displayName": "25 St"
+  },
+  {
+    "id": "129",
+    "name": "28 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "129N"
+      },
+      {
+        "dir": "S",
+        "stopId": "129S"
+      }
+    ],
+    "displayName": "28 St (1, 2)"
+  },
+  {
+    "id": "633",
+    "name": "28 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "633N"
+      },
+      {
+        "dir": "S",
+        "stopId": "633S"
+      }
+    ],
+    "displayName": "28 St (4, 6, 6X)"
+  },
+  {
+    "id": "R18",
+    "name": "28 St",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R18S"
+      }
+    ],
+    "displayName": "28 St (N, Q, R, W)"
+  },
+  {
+    "id": "L05",
+    "name": "3 Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L05S"
+      }
+    ],
+    "displayName": "3 Av"
+  },
+  {
+    "id": "619",
+    "name": "3 Av-138 St",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "619N"
+      },
+      {
+        "dir": "S",
+        "stopId": "619S"
+      }
+    ],
+    "displayName": "3 Av-138 St"
+  },
+  {
+    "id": "221",
+    "name": "3 Av-149 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "221N"
+      },
+      {
+        "dir": "S",
+        "stopId": "221S"
+      }
+    ],
+    "displayName": "3 Av-149 St"
+  },
+  {
+    "id": "R04",
+    "name": "30 Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R04S"
+      }
+    ],
+    "displayName": "30 Av"
+  },
+  {
+    "id": "632",
+    "name": "33 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "632N"
+      },
+      {
+        "dir": "S",
+        "stopId": "632S"
+      }
+    ],
+    "displayName": "33 St"
+  },
+  {
+    "id": "716",
+    "name": "33 St-Rawson St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "716N"
+      },
+      {
+        "dir": "S",
+        "stopId": "716S"
+      }
+    ],
+    "displayName": "33 St-Rawson St"
+  },
+  {
+    "id": "D17",
+    "name": "34 St-Herald Sq",
+    "lines": [
+      "B",
+      "D",
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D17S"
+      }
+    ],
+    "displayName": "34 St-Herald Sq (B, D, F, FX, M)"
+  },
+  {
+    "id": "R17",
+    "name": "34 St-Herald Sq",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R17S"
+      }
+    ],
+    "displayName": "34 St-Herald Sq (N, Q, R, W)"
+  },
+  {
+    "id": "726",
+    "name": "34 St-Hudson Yards",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "726N"
+      },
+      {
+        "dir": "S",
+        "stopId": "726S"
+      }
+    ],
+    "displayName": "34 St-Hudson Yards"
+  },
+  {
+    "id": "128",
+    "name": "34 St-Penn Station",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "128N"
+      },
+      {
+        "dir": "S",
+        "stopId": "128S"
+      }
+    ],
+    "displayName": "34 St-Penn Station (1, 2, 3)"
+  },
+  {
+    "id": "A28",
+    "name": "34 St-Penn Station",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A28S"
+      }
+    ],
+    "displayName": "34 St-Penn Station (A, C, E)"
+  },
+  {
+    "id": "R06",
+    "name": "36 Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R06S"
+      }
+    ],
+    "displayName": "36 Av"
+  },
+  {
+    "id": "R36",
+    "name": "36 St",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R36N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R36S"
+      }
+    ],
+    "displayName": "36 St (D, N, R, W)"
+  },
+  {
+    "id": "G20",
+    "name": "36 St",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G20S"
+      }
+    ],
+    "displayName": "36 St (E, F, M, R)"
+  },
+  {
+    "id": "R08",
+    "name": "39 Av-Dutch Kills",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R08S"
+      }
+    ],
+    "displayName": "39 Av-Dutch Kills"
+  },
+  {
+    "id": "R33",
+    "name": "4 Av-9 St",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R33N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R33S"
+      }
+    ],
+    "displayName": "4 Av-9 St (D, N, R, W)"
+  },
+  {
+    "id": "F23",
+    "name": "4 Av-9 St",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F23S"
+      }
+    ],
+    "displayName": "4 Av-9 St (F, G)"
+  },
+  {
+    "id": "715",
+    "name": "40 St-Lowery St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "715N"
+      },
+      {
+        "dir": "S",
+        "stopId": "715S"
+      }
+    ],
+    "displayName": "40 St-Lowery St"
+  },
+  {
+    "id": "D16",
+    "name": "42 St-Bryant Pk",
+    "lines": [
+      "B",
+      "D",
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D16S"
+      }
+    ],
+    "displayName": "42 St-Bryant Pk"
+  },
+  {
+    "id": "A27",
+    "name": "42 St-Port Authority Bus Terminal",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A27S"
+      }
+    ],
+    "displayName": "42 St-Port Authority Bus Terminal"
+  },
+  {
+    "id": "R39",
+    "name": "45 St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R39N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R39S"
+      }
+    ],
+    "displayName": "45 St"
+  },
+  {
+    "id": "G18",
+    "name": "46 St",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G18S"
+      }
+    ],
+    "displayName": "46 St"
+  },
+  {
+    "id": "714",
+    "name": "46 St-Bliss St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "714N"
+      },
+      {
+        "dir": "S",
+        "stopId": "714S"
+      }
+    ],
+    "displayName": "46 St-Bliss St"
+  },
+  {
+    "id": "D15",
+    "name": "47-50 Sts-Rockefeller Ctr",
+    "lines": [
+      "B",
+      "D",
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D15S"
+      }
+    ],
+    "displayName": "47-50 Sts-Rockefeller Ctr"
+  },
+  {
+    "id": "R15",
+    "name": "49 St",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R15S"
+      }
+    ],
+    "displayName": "49 St"
+  },
+  {
+    "id": "724",
+    "name": "5 Av",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "724N"
+      },
+      {
+        "dir": "S",
+        "stopId": "724S"
+      }
+    ],
+    "displayName": "5 Av"
+  },
+  {
+    "id": "F12",
+    "name": "5 Av/53 St",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F12S"
+      }
+    ],
+    "displayName": "5 Av/53 St"
+  },
+  {
+    "id": "R13",
+    "name": "5 Av/59 St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R13S"
+      }
+    ],
+    "displayName": "5 Av/59 St"
+  },
+  {
+    "id": "126",
+    "name": "50 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "126N"
+      },
+      {
+        "dir": "S",
+        "stopId": "126S"
+      }
+    ],
+    "displayName": "50 St (1, 2)"
+  },
+  {
+    "id": "A25",
+    "name": "50 St",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A25S"
+      }
+    ],
+    "displayName": "50 St (A, C, E)"
+  },
+  {
+    "id": "B14",
+    "name": "50 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B14S"
+      }
+    ],
+    "displayName": "50 St (D)"
+  },
+  {
+    "id": "630",
+    "name": "51 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "630N"
+      },
+      {
+        "dir": "S",
+        "stopId": "630S"
+      }
+    ],
+    "displayName": "51 St"
+  },
+  {
+    "id": "713",
+    "name": "52 St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "713N"
+      },
+      {
+        "dir": "S",
+        "stopId": "713S"
+      }
+    ],
+    "displayName": "52 St"
+  },
+  {
+    "id": "R40",
+    "name": "53 St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R40N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R40S"
+      }
+    ],
+    "displayName": "53 St"
+  },
+  {
+    "id": "B15",
+    "name": "55 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B15S"
+      }
+    ],
+    "displayName": "55 St"
+  },
+  {
+    "id": "B10",
+    "name": "57 St",
+    "lines": [
+      "F",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B10S"
+      }
+    ],
+    "displayName": "57 St"
+  },
+  {
+    "id": "R14",
+    "name": "57 St-7 Av",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R14S"
+      }
+    ],
+    "displayName": "57 St-7 Av"
+  },
+  {
+    "id": "629",
+    "name": "59 St",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "629N"
+      },
+      {
+        "dir": "S",
+        "stopId": "629S"
+      }
+    ],
+    "displayName": "59 St (4, 5, 6, 6X)"
+  },
+  {
+    "id": "R41",
+    "name": "59 St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R41N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R41S"
+      }
+    ],
+    "displayName": "59 St (N, R, W)"
+  },
+  {
+    "id": "125",
+    "name": "59 St-Columbus Circle",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "125N"
+      },
+      {
+        "dir": "S",
+        "stopId": "125S"
+      }
+    ],
+    "displayName": "59 St-Columbus Circle (1, 2)"
+  },
+  {
+    "id": "A24",
+    "name": "59 St-Columbus Circle",
+    "lines": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A24S"
+      }
+    ],
+    "displayName": "59 St-Columbus Circle (A, B, C, D)"
+  },
+  {
+    "id": "L02",
+    "name": "6 Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L02N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L02S"
+      }
+    ],
+    "displayName": "6 Av"
+  },
+  {
+    "id": "712",
+    "name": "61 St-Woodside",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "712N"
+      },
+      {
+        "dir": "S",
+        "stopId": "712S"
+      }
+    ],
+    "displayName": "61 St-Woodside"
+  },
+  {
+    "id": "B16",
+    "name": "62 St",
+    "lines": [
+      "D",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B16S"
+      }
+    ],
+    "displayName": "62 St"
+  },
+  {
+    "id": "G10",
+    "name": "63 Dr-Rego Park",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G10S"
+      }
+    ],
+    "displayName": "63 Dr-Rego Park"
+  },
+  {
+    "id": "G15",
+    "name": "65 St",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G15S"
+      }
+    ],
+    "displayName": "65 St"
+  },
+  {
+    "id": "124",
+    "name": "66 St-Lincoln Center",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "124N"
+      },
+      {
+        "dir": "S",
+        "stopId": "124S"
+      }
+    ],
+    "displayName": "66 St-Lincoln Center"
+  },
+  {
+    "id": "G09",
+    "name": "67 Av",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G09S"
+      }
+    ],
+    "displayName": "67 Av"
+  },
+  {
+    "id": "628",
+    "name": "68 St-Hunter College",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "628N"
+      },
+      {
+        "dir": "S",
+        "stopId": "628S"
+      }
+    ],
+    "displayName": "68 St-Hunter College"
+  },
+  {
+    "id": "711",
+    "name": "69 St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "711N"
+      },
+      {
+        "dir": "S",
+        "stopId": "711S"
+      }
+    ],
+    "displayName": "69 St"
+  },
+  {
+    "id": "D14",
+    "name": "7 Av",
+    "lines": [
+      "B",
+      "D",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D14S"
+      }
+    ],
+    "displayName": "7 Av (B, D, E)"
+  },
+  {
+    "id": "D25",
+    "name": "7 Av",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D25S"
+      }
+    ],
+    "displayName": "7 Av (B, Q)"
+  },
+  {
+    "id": "F24",
+    "name": "7 Av",
+    "lines": [
+      "F",
+      "FX",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F24S"
+      }
+    ],
+    "displayName": "7 Av (F, FX, G)"
+  },
+  {
+    "id": "B17",
+    "name": "71 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B17S"
+      }
+    ],
+    "displayName": "71 St"
+  },
+  {
+    "id": "123",
+    "name": "72 St",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "123N"
+      },
+      {
+        "dir": "S",
+        "stopId": "123S"
+      }
+    ],
+    "displayName": "72 St (1, 2, 3)"
+  },
+  {
+    "id": "A22",
+    "name": "72 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A22S"
+      }
+    ],
+    "displayName": "72 St (A, B, C)"
+  },
+  {
+    "id": "Q03",
+    "name": "72 St",
+    "lines": [
+      "N",
+      "Q",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "Q03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "Q03S"
+      }
+    ],
+    "displayName": "72 St (N, Q, R)"
+  },
+  {
+    "id": "710",
+    "name": "74 St-Broadway",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "710N"
+      },
+      {
+        "dir": "S",
+        "stopId": "710S"
+      }
+    ],
+    "displayName": "74 St-Broadway"
+  },
+  {
+    "id": "F07",
+    "name": "75 Av",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F07S"
+      }
+    ],
+    "displayName": "75 Av"
+  },
+  {
+    "id": "J17",
+    "name": "75 St-Elderts Ln",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J17S"
+      }
+    ],
+    "displayName": "75 St-Elderts Ln"
+  },
+  {
+    "id": "627",
+    "name": "77 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "627N"
+      },
+      {
+        "dir": "S",
+        "stopId": "627S"
+      }
+    ],
+    "displayName": "77 St (4, 6, 6X)"
+  },
+  {
+    "id": "R43",
+    "name": "77 St",
+    "lines": [
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R43N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R43S"
+      }
+    ],
+    "displayName": "77 St (R)"
+  },
+  {
+    "id": "122",
+    "name": "79 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "122N"
+      },
+      {
+        "dir": "S",
+        "stopId": "122S"
+      }
+    ],
+    "displayName": "79 St (1, 2)"
+  },
+  {
+    "id": "B18",
+    "name": "79 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B18S"
+      }
+    ],
+    "displayName": "79 St (D)"
+  },
+  {
+    "id": "L01",
+    "name": "8 Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L01S"
+      }
+    ],
+    "displayName": "8 Av (L)"
+  },
+  {
+    "id": "N02",
+    "name": "8 Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N02N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N02S"
+      }
+    ],
+    "displayName": "8 Av (N, W)"
+  },
+  {
+    "id": "R21",
+    "name": "8 St-NYU",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R21S"
+      }
+    ],
+    "displayName": "8 St-NYU"
+  },
+  {
+    "id": "A59",
+    "name": "80 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A59N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A59S"
+      }
+    ],
+    "displayName": "80 St"
+  },
+  {
+    "id": "A21",
+    "name": "81 St-Museum of Natural History",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A21S"
+      }
+    ],
+    "displayName": "81 St-Museum of Natural History"
+  },
+  {
+    "id": "709",
+    "name": "82 St-Jackson Hts",
+    "lines": [
+      "7"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "709N"
+      },
+      {
+        "dir": "S",
+        "stopId": "709S"
+      }
+    ],
+    "displayName": "82 St-Jackson Hts"
+  },
+  {
+    "id": "J16",
+    "name": "85 St-Forest Pkwy",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J16S"
+      }
+    ],
+    "displayName": "85 St-Forest Pkwy"
+  },
+  {
+    "id": "121",
+    "name": "86 St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "121N"
+      },
+      {
+        "dir": "S",
+        "stopId": "121S"
+      }
+    ],
+    "displayName": "86 St (1, 2)"
+  },
+  {
+    "id": "626",
+    "name": "86 St",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "626N"
+      },
+      {
+        "dir": "S",
+        "stopId": "626S"
+      }
+    ],
+    "displayName": "86 St (4, 5, 6, 6X)"
+  },
+  {
+    "id": "A20",
+    "name": "86 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A20S"
+      }
+    ],
+    "displayName": "86 St (A, B, C)"
+  },
+  {
+    "id": "Q04",
+    "name": "86 St",
+    "lines": [
+      "N",
+      "Q",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "Q04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "Q04S"
+      }
+    ],
+    "displayName": "86 St (N, Q, R)"
+  },
+  {
+    "id": "N10",
+    "name": "86 St",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N10S"
+      }
+    ],
+    "displayName": "86 St (N, W)"
+  },
+  {
+    "id": "R44",
+    "name": "86 St",
+    "lines": [
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R44N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R44S"
+      }
+    ],
+    "displayName": "86 St (R)"
+  },
+  {
+    "id": "A60",
+    "name": "88 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A60N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A60S"
+      }
+    ],
+    "displayName": "88 St"
+  },
+  {
+    "id": "B12",
+    "name": "9 Av",
+    "lines": [
+      "D",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B12S"
+      }
+    ],
+    "displayName": "9 Av"
+  },
+  {
+    "id": "708",
+    "name": "90 St-Elmhurst Av",
+    "lines": [
+      "7"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "708N"
+      },
+      {
+        "dir": "S",
+        "stopId": "708S"
+      }
+    ],
+    "displayName": "90 St-Elmhurst Av"
+  },
+  {
+    "id": "120",
+    "name": "96 St",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "120N"
+      },
+      {
+        "dir": "S",
+        "stopId": "120S"
+      }
+    ],
+    "displayName": "96 St (1, 2, 3)"
+  },
+  {
+    "id": "625",
+    "name": "96 St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "625N"
+      },
+      {
+        "dir": "S",
+        "stopId": "625S"
+      }
+    ],
+    "displayName": "96 St (4, 6, 6X)"
+  },
+  {
+    "id": "A19",
+    "name": "96 St",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A19S"
+      }
+    ],
+    "displayName": "96 St (A, B, C)"
+  },
+  {
+    "id": "Q05",
+    "name": "96 St",
+    "lines": [
+      "N",
+      "Q",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "Q05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "Q05S"
+      }
+    ],
+    "displayName": "96 St (N, Q, R)"
+  },
+  {
+    "id": "J24",
+    "name": "Alabama Av",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J24S"
+      }
+    ],
+    "displayName": "Alabama Av"
+  },
+  {
+    "id": "210",
+    "name": "Allerton Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "210N"
+      },
+      {
+        "dir": "S",
+        "stopId": "210S"
+      }
+    ],
+    "displayName": "Allerton Av"
+  },
+  {
+    "id": "S17",
+    "name": "Annadale",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S17S"
+      }
+    ],
+    "displayName": "Annadale"
+  },
+  {
+    "id": "H01",
+    "name": "Aqueduct Racetrack",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H01S"
+      }
+    ],
+    "displayName": "Aqueduct Racetrack"
+  },
+  {
+    "id": "H02",
+    "name": "Aqueduct-N Conduit Av",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H02N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H02S"
+      }
+    ],
+    "displayName": "Aqueduct-N Conduit Av"
+  },
+  {
+    "id": "S11",
+    "name": "Arthur Kill",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S11S"
+      }
+    ],
+    "displayName": "Arthur Kill"
+  },
+  {
+    "id": "636",
+    "name": "Astor Pl",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "636N"
+      },
+      {
+        "dir": "S",
+        "stopId": "636S"
+      }
+    ],
+    "displayName": "Astor Pl"
+  },
+  {
+    "id": "R03",
+    "name": "Astoria Blvd",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R03S"
+      }
+    ],
+    "displayName": "Astoria Blvd"
+  },
+  {
+    "id": "R01",
+    "name": "Astoria-Ditmars Blvd",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R01S"
+      }
+    ],
+    "displayName": "Astoria-Ditmars Blvd"
+  },
+  {
+    "id": "L24",
+    "name": "Atlantic Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L24S"
+      }
+    ],
+    "displayName": "Atlantic Av"
+  },
+  {
+    "id": "235",
+    "name": "Atlantic Av-Barclays Ctr",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "235N"
+      },
+      {
+        "dir": "S",
+        "stopId": "235S"
+      }
+    ],
+    "displayName": "Atlantic Av-Barclays Ctr (2, 3, 4, 5)"
+  },
+  {
+    "id": "D24",
+    "name": "Atlantic Av-Barclays Ctr",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D24S"
+      }
+    ],
+    "displayName": "Atlantic Av-Barclays Ctr (B, Q)"
+  },
+  {
+    "id": "R31",
+    "name": "Atlantic Av-Barclays Ctr",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R31S"
+      }
+    ],
+    "displayName": "Atlantic Av-Barclays Ctr (D, N, R, W)"
+  },
+  {
+    "id": "D32",
+    "name": "Avenue H",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D32N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D32S"
+      }
+    ],
+    "displayName": "Avenue H"
+  },
+  {
+    "id": "F31",
+    "name": "Avenue I",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F31S"
+      }
+    ],
+    "displayName": "Avenue I"
+  },
+  {
+    "id": "D33",
+    "name": "Avenue J",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D33N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D33S"
+      }
+    ],
+    "displayName": "Avenue J"
+  },
+  {
+    "id": "D34",
+    "name": "Avenue M",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D34N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D34S"
+      }
+    ],
+    "displayName": "Avenue M"
+  },
+  {
+    "id": "F33",
+    "name": "Avenue N",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F33N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F33S"
+      }
+    ],
+    "displayName": "Avenue N"
+  },
+  {
+    "id": "F34",
+    "name": "Avenue P",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F34N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F34S"
+      }
+    ],
+    "displayName": "Avenue P"
+  },
+  {
+    "id": "F36",
+    "name": "Avenue U",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F36N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F36S"
+      }
+    ],
+    "displayName": "Avenue U (F, FX)"
+  },
+  {
+    "id": "N09",
+    "name": "Avenue U",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N09S"
+      }
+    ],
+    "displayName": "Avenue U (N, W)"
+  },
+  {
+    "id": "D37",
+    "name": "Avenue U",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D37N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D37S"
+      }
+    ],
+    "displayName": "Avenue U (Q)"
+  },
+  {
+    "id": "F38",
+    "name": "Avenue X",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F38N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F38S"
+      }
+    ],
+    "displayName": "Avenue X"
+  },
+  {
+    "id": "B23",
+    "name": "Bay 50 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B23S"
+      }
+    ],
+    "displayName": "Bay 50 St"
+  },
+  {
+    "id": "B21",
+    "name": "Bay Pkwy",
+    "lines": [
+      "D",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B21S"
+      }
+    ],
+    "displayName": "Bay Pkwy (D, R, W)"
+  },
+  {
+    "id": "F32",
+    "name": "Bay Pkwy",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F32N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F32S"
+      }
+    ],
+    "displayName": "Bay Pkwy (F, FX)"
+  },
+  {
+    "id": "N07",
+    "name": "Bay Pkwy",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N07S"
+      }
+    ],
+    "displayName": "Bay Pkwy (N, W)"
+  },
+  {
+    "id": "R42",
+    "name": "Bay Ridge Av",
+    "lines": [
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R42N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R42S"
+      }
+    ],
+    "displayName": "Bay Ridge Av"
+  },
+  {
+    "id": "R45",
+    "name": "Bay Ridge-95 St",
+    "lines": [
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R45N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R45S"
+      }
+    ],
+    "displayName": "Bay Ridge-95 St"
+  },
+  {
+    "id": "S20",
+    "name": "Bay Terrace",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S20S"
+      }
+    ],
+    "displayName": "Bay Terrace"
+  },
+  {
+    "id": "502",
+    "name": "Baychester Av",
+    "lines": [
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "502N"
+      },
+      {
+        "dir": "S",
+        "stopId": "502S"
+      }
+    ],
+    "displayName": "Baychester Av"
+  },
+  {
+    "id": "H14",
+    "name": "Beach 105 St",
+    "lines": [
+      "A",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H14S"
+      }
+    ],
+    "displayName": "Beach 105 St"
+  },
+  {
+    "id": "H10",
+    "name": "Beach 25 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H10S"
+      }
+    ],
+    "displayName": "Beach 25 St"
+  },
+  {
+    "id": "H09",
+    "name": "Beach 36 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H09S"
+      }
+    ],
+    "displayName": "Beach 36 St"
+  },
+  {
+    "id": "H08",
+    "name": "Beach 44 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H08S"
+      }
+    ],
+    "displayName": "Beach 44 St"
+  },
+  {
+    "id": "H07",
+    "name": "Beach 60 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H07S"
+      }
+    ],
+    "displayName": "Beach 60 St"
+  },
+  {
+    "id": "H06",
+    "name": "Beach 67 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H06S"
+      }
+    ],
+    "displayName": "Beach 67 St"
+  },
+  {
+    "id": "H12",
+    "name": "Beach 90 St",
+    "lines": [
+      "A",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H12S"
+      }
+    ],
+    "displayName": "Beach 90 St"
+  },
+  {
+    "id": "H13",
+    "name": "Beach 98 St",
+    "lines": [
+      "A",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H13S"
+      }
+    ],
+    "displayName": "Beach 98 St"
+  },
+  {
+    "id": "L08",
+    "name": "Bedford Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L08S"
+      }
+    ],
+    "displayName": "Bedford Av"
+  },
+  {
+    "id": "D03",
+    "name": "Bedford Park Blvd",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D03S"
+      }
+    ],
+    "displayName": "Bedford Park Blvd"
+  },
+  {
+    "id": "405",
+    "name": "Bedford Park Blvd-Lehman College",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "405N"
+      },
+      {
+        "dir": "S",
+        "stopId": "405S"
+      }
+    ],
+    "displayName": "Bedford Park Blvd-Lehman College"
+  },
+  {
+    "id": "G33",
+    "name": "Bedford-Nostrand Avs",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G33N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G33S"
+      }
+    ],
+    "displayName": "Bedford-Nostrand Avs"
+  },
+  {
+    "id": "236",
+    "name": "Bergen St",
+    "lines": [
+      "2",
+      "3",
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "236N"
+      },
+      {
+        "dir": "S",
+        "stopId": "236S"
+      }
+    ],
+    "displayName": "Bergen St (2, 3, 4)"
+  },
+  {
+    "id": "F20",
+    "name": "Bergen St",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F20S"
+      }
+    ],
+    "displayName": "Bergen St (F, G)"
+  },
+  {
+    "id": "D29",
+    "name": "Beverley Rd",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D29S"
+      }
+    ],
+    "displayName": "Beverley Rd"
+  },
+  {
+    "id": "245",
+    "name": "Beverly Rd",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "245N"
+      },
+      {
+        "dir": "S",
+        "stopId": "245S"
+      }
+    ],
+    "displayName": "Beverly Rd"
+  },
+  {
+    "id": "637",
+    "name": "Bleecker St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "637N"
+      },
+      {
+        "dir": "S",
+        "stopId": "637S"
+      }
+    ],
+    "displayName": "Bleecker St"
+  },
+  {
+    "id": "232",
+    "name": "Borough Hall",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "232N"
+      },
+      {
+        "dir": "S",
+        "stopId": "232S"
+      }
+    ],
+    "displayName": "Borough Hall (2, 3)"
+  },
+  {
+    "id": "423",
+    "name": "Borough Hall",
+    "lines": [
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "423N"
+      },
+      {
+        "dir": "S",
+        "stopId": "423S"
+      }
+    ],
+    "displayName": "Borough Hall (4, 5)"
+  },
+  {
+    "id": "S04",
+    "name": "Botanic Garden",
+    "lines": [
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S04S"
+      }
+    ],
+    "displayName": "Botanic Garden"
+  },
+  {
+    "id": "M19",
+    "name": "Bowery",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M19S"
+      }
+    ],
+    "displayName": "Bowery"
+  },
+  {
+    "id": "420",
+    "name": "Bowling Green",
+    "lines": [
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "420N"
+      },
+      {
+        "dir": "S",
+        "stopId": "420S"
+      }
+    ],
+    "displayName": "Bowling Green"
+  },
+  {
+    "id": "F05",
+    "name": "Briarwood",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F05S"
+      }
+    ],
+    "displayName": "Briarwood"
+  },
+  {
+    "id": "D40",
+    "name": "Brighton Beach",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D40N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D40S"
+      }
+    ],
+    "displayName": "Brighton Beach"
+  },
+  {
+    "id": "H04",
+    "name": "Broad Channel",
+    "lines": [
+      "A",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H04S"
+      }
+    ],
+    "displayName": "Broad Channel"
+  },
+  {
+    "id": "M23",
+    "name": "Broad St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M23S"
+      }
+    ],
+    "displayName": "Broad St"
+  },
+  {
+    "id": "G30",
+    "name": "Broadway",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G30S"
+      }
+    ],
+    "displayName": "Broadway (G)"
+  },
+  {
+    "id": "R05",
+    "name": "Broadway",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R05S"
+      }
+    ],
+    "displayName": "Broadway (N, W)"
+  },
+  {
+    "id": "A51",
+    "name": "Broadway Junction",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A51N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A51S"
+      }
+    ],
+    "displayName": "Broadway Junction (A, C)"
+  },
+  {
+    "id": "J27",
+    "name": "Broadway Junction",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J27S"
+      }
+    ],
+    "displayName": "Broadway Junction (J, Z)"
+  },
+  {
+    "id": "L22",
+    "name": "Broadway Junction",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L22S"
+      }
+    ],
+    "displayName": "Broadway Junction (L)"
+  },
+  {
+    "id": "D21",
+    "name": "Broadway-Lafayette St",
+    "lines": [
+      "B",
+      "D",
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D21S"
+      }
+    ],
+    "displayName": "Broadway-Lafayette St"
+  },
+  {
+    "id": "212",
+    "name": "Bronx Park East",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "212N"
+      },
+      {
+        "dir": "S",
+        "stopId": "212S"
+      }
+    ],
+    "displayName": "Bronx Park East"
+  },
+  {
+    "id": "618",
+    "name": "Brook Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "618N"
+      },
+      {
+        "dir": "S",
+        "stopId": "618S"
+      }
+    ],
+    "displayName": "Brook Av"
+  },
+  {
+    "id": "640",
+    "name": "Brooklyn Bridge-City Hall",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "640N"
+      },
+      {
+        "dir": "S",
+        "stopId": "640S"
+      }
+    ],
+    "displayName": "Brooklyn Bridge-City Hall"
+  },
+  {
+    "id": "602",
+    "name": "Buhre Av",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "602N"
+      },
+      {
+        "dir": "S",
+        "stopId": "602S"
+      }
+    ],
+    "displayName": "Buhre Av"
+  },
+  {
+    "id": "209",
+    "name": "Burke Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "209N"
+      },
+      {
+        "dir": "S",
+        "stopId": "209S"
+      }
+    ],
+    "displayName": "Burke Av"
+  },
+  {
+    "id": "409",
+    "name": "Burnside Av",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "409N"
+      },
+      {
+        "dir": "S",
+        "stopId": "409S"
+      }
+    ],
+    "displayName": "Burnside Av"
+  },
+  {
+    "id": "L21",
+    "name": "Bushwick Av-Aberdeen St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L21S"
+      }
+    ],
+    "displayName": "Bushwick Av-Aberdeen St"
+  },
+  {
+    "id": "135",
+    "name": "Canal St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "135N"
+      },
+      {
+        "dir": "S",
+        "stopId": "135S"
+      }
+    ],
+    "displayName": "Canal St (1, 2)"
+  },
+  {
+    "id": "639",
+    "name": "Canal St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "639N"
+      },
+      {
+        "dir": "S",
+        "stopId": "639S"
+      }
+    ],
+    "displayName": "Canal St (4, 6, 6X)"
+  },
+  {
+    "id": "A34",
+    "name": "Canal St",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A34N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A34S"
+      }
+    ],
+    "displayName": "Canal St (A, C, E)"
+  },
+  {
+    "id": "M20",
+    "name": "Canal St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M20S"
+      }
+    ],
+    "displayName": "Canal St (J, Z)"
+  },
+  {
+    "id": "Q01",
+    "name": "Canal St",
+    "lines": [
+      "N",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "Q01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "Q01S"
+      }
+    ],
+    "displayName": "Canal St (N, Q)"
+  },
+  {
+    "id": "R23",
+    "name": "Canal St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R23S"
+      }
+    ],
+    "displayName": "Canal St (N, R, W)"
+  },
+  {
+    "id": "L29",
+    "name": "Canarsie-Rockaway Pkwy",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L29S"
+      }
+    ],
+    "displayName": "Canarsie-Rockaway Pkwy"
+  },
+  {
+    "id": "F21",
+    "name": "Carroll St",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F21S"
+      }
+    ],
+    "displayName": "Carroll St"
+  },
+  {
+    "id": "607",
+    "name": "Castle Hill Av",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "607N"
+      },
+      {
+        "dir": "S",
+        "stopId": "607S"
+      }
+    ],
+    "displayName": "Castle Hill Av"
+  },
+  {
+    "id": "118",
+    "name": "Cathedral Pkwy (110 St)",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "118N"
+      },
+      {
+        "dir": "S",
+        "stopId": "118S"
+      }
+    ],
+    "displayName": "Cathedral Pkwy (110 St) (1)"
+  },
+  {
+    "id": "A17",
+    "name": "Cathedral Pkwy (110 St)",
+    "lines": [
+      "A",
+      "B",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A17S"
+      }
+    ],
+    "displayName": "Cathedral Pkwy (110 St) (A, B, C)"
+  },
+  {
+    "id": "M10",
+    "name": "Central Av",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M10S"
+      }
+    ],
+    "displayName": "Central Av"
+  },
+  {
+    "id": "137",
+    "name": "Chambers St",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "137N"
+      },
+      {
+        "dir": "S",
+        "stopId": "137S"
+      }
+    ],
+    "displayName": "Chambers St (1, 2, 3)"
+  },
+  {
+    "id": "A36",
+    "name": "Chambers St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A36N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A36S"
+      }
+    ],
+    "displayName": "Chambers St (A, C)"
+  },
+  {
+    "id": "M21",
+    "name": "Chambers St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M21S"
+      }
+    ],
+    "displayName": "Chambers St (J, Z)"
+  },
+  {
+    "id": "J28",
+    "name": "Chauncey St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J28S"
+      }
+    ],
+    "displayName": "Chauncey St"
+  },
+  {
+    "id": "133",
+    "name": "Christopher St-Stonewall",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "133N"
+      },
+      {
+        "dir": "S",
+        "stopId": "133S"
+      }
+    ],
+    "displayName": "Christopher St-Stonewall"
+  },
+  {
+    "id": "244",
+    "name": "Church Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "244N"
+      },
+      {
+        "dir": "S",
+        "stopId": "244S"
+      }
+    ],
+    "displayName": "Church Av (2, 5)"
+  },
+  {
+    "id": "D28",
+    "name": "Church Av",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D28S"
+      }
+    ],
+    "displayName": "Church Av (B, Q)"
+  },
+  {
+    "id": "F27",
+    "name": "Church Av",
+    "lines": [
+      "F",
+      "FX",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F27S"
+      }
+    ],
+    "displayName": "Church Av (F, FX, G)"
+  },
+  {
+    "id": "R24",
+    "name": "City Hall",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R24S"
+      }
+    ],
+    "displayName": "City Hall"
+  },
+  {
+    "id": "231",
+    "name": "Clark St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "231N"
+      },
+      {
+        "dir": "S",
+        "stopId": "231S"
+      }
+    ],
+    "displayName": "Clark St"
+  },
+  {
+    "id": "G34",
+    "name": "Classon Av",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G34N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G34S"
+      }
+    ],
+    "displayName": "Classon Av"
+  },
+  {
+    "id": "J22",
+    "name": "Cleveland St",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J22S"
+      }
+    ],
+    "displayName": "Cleveland St"
+  },
+  {
+    "id": "S28",
+    "name": "Clifton",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S28S"
+      }
+    ],
+    "displayName": "Clifton"
+  },
+  {
+    "id": "A44",
+    "name": "Clinton-Washington Avs",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A44N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A44S"
+      }
+    ],
+    "displayName": "Clinton-Washington Avs (A, C)"
+  },
+  {
+    "id": "G35",
+    "name": "Clinton-Washington Avs",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G35N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G35S"
+      }
+    ],
+    "displayName": "Clinton-Washington Avs (G)"
+  },
+  {
+    "id": "D43",
+    "name": "Coney Island-Stillwell Av",
+    "lines": [
+      "D",
+      "F",
+      "FX",
+      "N",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D43N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D43S"
+      }
+    ],
+    "displayName": "Coney Island-Stillwell Av"
+  },
+  {
+    "id": "D30",
+    "name": "Cortelyou Rd",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D30S"
+      }
+    ],
+    "displayName": "Cortelyou Rd"
+  },
+  {
+    "id": "R25",
+    "name": "Cortlandt St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R25S"
+      }
+    ],
+    "displayName": "Cortlandt St"
+  },
+  {
+    "id": "719",
+    "name": "Court Sq",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "719N"
+      },
+      {
+        "dir": "S",
+        "stopId": "719S"
+      }
+    ],
+    "displayName": "Court Sq (7, 7X)"
+  },
+  {
+    "id": "G22",
+    "name": "Court Sq",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G22S"
+      }
+    ],
+    "displayName": "Court Sq (G)"
+  },
+  {
+    "id": "F09",
+    "name": "Court Sq-23 St",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F09S"
+      }
+    ],
+    "displayName": "Court Sq-23 St"
+  },
+  {
+    "id": "R28",
+    "name": "Court St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R28S"
+      }
+    ],
+    "displayName": "Court St"
+  },
+  {
+    "id": "J20",
+    "name": "Crescent St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J20S"
+      }
+    ],
+    "displayName": "Crescent St"
+  },
+  {
+    "id": "250",
+    "name": "Crown Hts-Utica Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "250N"
+      },
+      {
+        "dir": "S",
+        "stopId": "250S"
+      }
+    ],
+    "displayName": "Crown Hts-Utica Av"
+  },
+  {
+    "id": "617",
+    "name": "Cypress Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "617N"
+      },
+      {
+        "dir": "S",
+        "stopId": "617S"
+      }
+    ],
+    "displayName": "Cypress Av"
+  },
+  {
+    "id": "J19",
+    "name": "Cypress Hills",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J19S"
+      }
+    ],
+    "displayName": "Cypress Hills"
+  },
+  {
+    "id": "R30",
+    "name": "DeKalb Av",
+    "lines": [
+      "B",
+      "D",
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R30S"
+      }
+    ],
+    "displayName": "DeKalb Av (B, D, N, Q, R, W)"
+  },
+  {
+    "id": "L16",
+    "name": "DeKalb Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L16S"
+      }
+    ],
+    "displayName": "DeKalb Av (L)"
+  },
+  {
+    "id": "F15",
+    "name": "Delancey St-Essex St",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F15S"
+      }
+    ],
+    "displayName": "Delancey St-Essex St (F, FX)"
+  },
+  {
+    "id": "M18",
+    "name": "Delancey St-Essex St",
+    "lines": [
+      "J",
+      "M",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M18S"
+      }
+    ],
+    "displayName": "Delancey St-Essex St (J, M, Z)"
+  },
+  {
+    "id": "F29",
+    "name": "Ditmas Av",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F29S"
+      }
+    ],
+    "displayName": "Ditmas Av"
+  },
+  {
+    "id": "S25",
+    "name": "Dongan Hills",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S25S"
+      }
+    ],
+    "displayName": "Dongan Hills"
+  },
+  {
+    "id": "109",
+    "name": "Dyckman St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "109N"
+      },
+      {
+        "dir": "S",
+        "stopId": "109S"
+      }
+    ],
+    "displayName": "Dyckman St (1)"
+  },
+  {
+    "id": "A03",
+    "name": "Dyckman St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A03S"
+      }
+    ],
+    "displayName": "Dyckman St (A)"
+  },
+  {
+    "id": "616",
+    "name": "E 143 St-St Mary's St",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "616N"
+      },
+      {
+        "dir": "S",
+        "stopId": "616S"
+      }
+    ],
+    "displayName": "E 143 St-St Mary's St"
+  },
+  {
+    "id": "615",
+    "name": "E 149 St",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "615N"
+      },
+      {
+        "dir": "S",
+        "stopId": "615S"
+      }
+    ],
+    "displayName": "E 149 St"
+  },
+  {
+    "id": "213",
+    "name": "E 180 St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "213N"
+      },
+      {
+        "dir": "S",
+        "stopId": "213S"
+      }
+    ],
+    "displayName": "E 180 St"
+  },
+  {
+    "id": "L28",
+    "name": "East 105 St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L28S"
+      }
+    ],
+    "displayName": "East 105 St"
+  },
+  {
+    "id": "F16",
+    "name": "East Broadway",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F16S"
+      }
+    ],
+    "displayName": "East Broadway"
+  },
+  {
+    "id": "501",
+    "name": "Eastchester-Dyre Av",
+    "lines": [
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "501N"
+      },
+      {
+        "dir": "S",
+        "stopId": "501S"
+      }
+    ],
+    "displayName": "Eastchester-Dyre Av"
+  },
+  {
+    "id": "238",
+    "name": "Eastern Pkwy-Brooklyn Museum",
+    "lines": [
+      "2",
+      "3",
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "238N"
+      },
+      {
+        "dir": "S",
+        "stopId": "238S"
+      }
+    ],
+    "displayName": "Eastern Pkwy-Brooklyn Museum"
+  },
+  {
+    "id": "611",
+    "name": "Elder Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "611N"
+      },
+      {
+        "dir": "S",
+        "stopId": "611S"
+      }
+    ],
+    "displayName": "Elder Av"
+  },
+  {
+    "id": "G13",
+    "name": "Elmhurst Av",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G13S"
+      }
+    ],
+    "displayName": "Elmhurst Av"
+  },
+  {
+    "id": "S18",
+    "name": "Eltingville",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S18S"
+      }
+    ],
+    "displayName": "Eltingville"
+  },
+  {
+    "id": "A55",
+    "name": "Euclid Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A55N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A55S"
+      }
+    ],
+    "displayName": "Euclid Av"
+  },
+  {
+    "id": "H11",
+    "name": "Far Rockaway-Mott Av",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H11S"
+      }
+    ],
+    "displayName": "Far Rockaway-Mott Av"
+  },
+  {
+    "id": "247",
+    "name": "Flatbush Av-Brooklyn College",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "247N"
+      },
+      {
+        "dir": "S",
+        "stopId": "247S"
+      }
+    ],
+    "displayName": "Flatbush Av-Brooklyn College"
+  },
+  {
+    "id": "G31",
+    "name": "Flushing Av",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G31S"
+      }
+    ],
+    "displayName": "Flushing Av (G)"
+  },
+  {
+    "id": "M12",
+    "name": "Flushing Av",
+    "lines": [
+      "J",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M12S"
+      }
+    ],
+    "displayName": "Flushing Av (J, M)"
+  },
+  {
+    "id": "701",
+    "name": "Flushing-Main St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "701N"
+      },
+      {
+        "dir": "S",
+        "stopId": "701S"
+      }
+    ],
+    "displayName": "Flushing-Main St"
+  },
+  {
+    "id": "407",
+    "name": "Fordham Rd",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "407N"
+      },
+      {
+        "dir": "S",
+        "stopId": "407S"
+      }
+    ],
+    "displayName": "Fordham Rd (4)"
+  },
+  {
+    "id": "D05",
+    "name": "Fordham Rd",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D05S"
+      }
+    ],
+    "displayName": "Fordham Rd (B, D)"
+  },
+  {
+    "id": "M05",
+    "name": "Forest Av",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M05S"
+      }
+    ],
+    "displayName": "Forest Av"
+  },
+  {
+    "id": "G08",
+    "name": "Forest Hills-71 Av",
+    "lines": [
+      "E",
+      "F",
+      "FX",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G08S"
+      }
+    ],
+    "displayName": "Forest Hills-71 Av"
+  },
+  {
+    "id": "B13",
+    "name": "Fort Hamilton Pkwy",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B13S"
+      }
+    ],
+    "displayName": "Fort Hamilton Pkwy (D)"
+  },
+  {
+    "id": "F26",
+    "name": "Fort Hamilton Pkwy",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F26S"
+      }
+    ],
+    "displayName": "Fort Hamilton Pkwy (F, G)"
+  },
+  {
+    "id": "N03",
+    "name": "Fort Hamilton Pkwy",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N03S"
+      }
+    ],
+    "displayName": "Fort Hamilton Pkwy (N, W)"
+  },
+  {
+    "id": "A45",
+    "name": "Franklin Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A45N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A45S"
+      }
+    ],
+    "displayName": "Franklin Av (A, C)"
+  },
+  {
+    "id": "S01",
+    "name": "Franklin Av",
+    "lines": [
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S01S"
+      }
+    ],
+    "displayName": "Franklin Av (S)"
+  },
+  {
+    "id": "239",
+    "name": "Franklin Av-Medgar Evers College",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "239N"
+      },
+      {
+        "dir": "S",
+        "stopId": "239S"
+      }
+    ],
+    "displayName": "Franklin Av-Medgar Evers College"
+  },
+  {
+    "id": "136",
+    "name": "Franklin St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "136N"
+      },
+      {
+        "dir": "S",
+        "stopId": "136S"
+      }
+    ],
+    "displayName": "Franklin St"
+  },
+  {
+    "id": "216",
+    "name": "Freeman St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "216N"
+      },
+      {
+        "dir": "S",
+        "stopId": "216S"
+      }
+    ],
+    "displayName": "Freeman St"
+  },
+  {
+    "id": "M04",
+    "name": "Fresh Pond Rd",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M04S"
+      }
+    ],
+    "displayName": "Fresh Pond Rd"
+  },
+  {
+    "id": "229",
+    "name": "Fulton St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "229N"
+      },
+      {
+        "dir": "S",
+        "stopId": "229S"
+      }
+    ],
+    "displayName": "Fulton St (2, 3)"
+  },
+  {
+    "id": "418",
+    "name": "Fulton St",
+    "lines": [
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "418N"
+      },
+      {
+        "dir": "S",
+        "stopId": "418S"
+      }
+    ],
+    "displayName": "Fulton St (4, 5)"
+  },
+  {
+    "id": "A38",
+    "name": "Fulton St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A38N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A38S"
+      }
+    ],
+    "displayName": "Fulton St (A, C)"
+  },
+  {
+    "id": "G36",
+    "name": "Fulton St",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G36N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G36S"
+      }
+    ],
+    "displayName": "Fulton St (G)"
+  },
+  {
+    "id": "M22",
+    "name": "Fulton St",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M22S"
+      }
+    ],
+    "displayName": "Fulton St (J, Z)"
+  },
+  {
+    "id": "J30",
+    "name": "Gates Av",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J30S"
+      }
+    ],
+    "displayName": "Gates Av"
+  },
+  {
+    "id": "L11",
+    "name": "Graham Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L11S"
+      }
+    ],
+    "displayName": "Graham Av"
+  },
+  {
+    "id": "237",
+    "name": "Grand Army Plaza",
+    "lines": [
+      "2",
+      "3",
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "237N"
+      },
+      {
+        "dir": "S",
+        "stopId": "237S"
+      }
+    ],
+    "displayName": "Grand Army Plaza"
+  },
+  {
+    "id": "G12",
+    "name": "Grand Av-Newtown",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G12S"
+      }
+    ],
+    "displayName": "Grand Av-Newtown"
+  },
+  {
+    "id": "631",
+    "name": "Grand Central-42 St",
+    "lines": [
+      "4",
+      "5",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "631N"
+      },
+      {
+        "dir": "S",
+        "stopId": "631S"
+      }
+    ],
+    "displayName": "Grand Central-42 St (4, 5, 6, 6X)"
+  },
+  {
+    "id": "723",
+    "name": "Grand Central-42 St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "723N"
+      },
+      {
+        "dir": "S",
+        "stopId": "723S"
+      }
+    ],
+    "displayName": "Grand Central-42 St (7, 7X)"
+  },
+  {
+    "id": "901",
+    "name": "Grand Central-42 St",
+    "lines": [
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "901N"
+      },
+      {
+        "dir": "S",
+        "stopId": "901S"
+      }
+    ],
+    "displayName": "Grand Central-42 St (S)"
+  },
+  {
+    "id": "D22",
+    "name": "Grand St",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D22S"
+      }
+    ],
+    "displayName": "Grand St (B, D)"
+  },
+  {
+    "id": "L12",
+    "name": "Grand St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L12N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L12S"
+      }
+    ],
+    "displayName": "Grand St (L)"
+  },
+  {
+    "id": "A57",
+    "name": "Grant Av",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A57N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A57S"
+      }
+    ],
+    "displayName": "Grant Av"
+  },
+  {
+    "id": "S23",
+    "name": "Grant City",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S23S"
+      }
+    ],
+    "displayName": "Grant City"
+  },
+  {
+    "id": "S27",
+    "name": "Grasmere",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S27S"
+      }
+    ],
+    "displayName": "Grasmere"
+  },
+  {
+    "id": "S19",
+    "name": "Great Kills",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S19S"
+      }
+    ],
+    "displayName": "Great Kills"
+  },
+  {
+    "id": "G26",
+    "name": "Greenpoint Av",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G26S"
+      }
+    ],
+    "displayName": "Greenpoint Av"
+  },
+  {
+    "id": "208",
+    "name": "Gun Hill Rd",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "208N"
+      },
+      {
+        "dir": "S",
+        "stopId": "208S"
+      }
+    ],
+    "displayName": "Gun Hill Rd (2, 5)"
+  },
+  {
+    "id": "503",
+    "name": "Gun Hill Rd",
+    "lines": [
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "503N"
+      },
+      {
+        "dir": "S",
+        "stopId": "503S"
+      }
+    ],
+    "displayName": "Gun Hill Rd (5)"
+  },
+  {
+    "id": "J29",
+    "name": "Halsey St",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J29S"
+      }
+    ],
+    "displayName": "Halsey St (J)"
+  },
+  {
+    "id": "L19",
+    "name": "Halsey St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L19S"
+      }
+    ],
+    "displayName": "Halsey St (L)"
+  },
+  {
+    "id": "301",
+    "name": "Harlem-148 St",
+    "lines": [
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "301N"
+      },
+      {
+        "dir": "S",
+        "stopId": "301S"
+      }
+    ],
+    "displayName": "Harlem-148 St"
+  },
+  {
+    "id": "M14",
+    "name": "Hewes St",
+    "lines": [
+      "J",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M14S"
+      }
+    ],
+    "displayName": "Hewes St"
+  },
+  {
+    "id": "A40",
+    "name": "High St",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A40N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A40S"
+      }
+    ],
+    "displayName": "High St"
+  },
+  {
+    "id": "134",
+    "name": "Houston St",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "134N"
+      },
+      {
+        "dir": "S",
+        "stopId": "134S"
+      }
+    ],
+    "displayName": "Houston St"
+  },
+  {
+    "id": "H03",
+    "name": "Howard Beach-JFK Airport",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H03S"
+      }
+    ],
+    "displayName": "Howard Beach-JFK Airport"
+  },
+  {
+    "id": "233",
+    "name": "Hoyt St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "233N"
+      },
+      {
+        "dir": "S",
+        "stopId": "233S"
+      }
+    ],
+    "displayName": "Hoyt St"
+  },
+  {
+    "id": "A42",
+    "name": "Hoyt-Schermerhorn Sts",
+    "lines": [
+      "A",
+      "C",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A42N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A42S"
+      }
+    ],
+    "displayName": "Hoyt-Schermerhorn Sts"
+  },
+  {
+    "id": "S16",
+    "name": "Huguenot",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S16S"
+      }
+    ],
+    "displayName": "Huguenot"
+  },
+  {
+    "id": "720",
+    "name": "Hunters Point Av",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "720N"
+      },
+      {
+        "dir": "S",
+        "stopId": "720S"
+      }
+    ],
+    "displayName": "Hunters Point Av"
+  },
+  {
+    "id": "613",
+    "name": "Hunts Point Av",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "613N"
+      },
+      {
+        "dir": "S",
+        "stopId": "613S"
+      }
+    ],
+    "displayName": "Hunts Point Av"
+  },
+  {
+    "id": "218",
+    "name": "Intervale Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "218N"
+      },
+      {
+        "dir": "S",
+        "stopId": "218S"
+      }
+    ],
+    "displayName": "Intervale Av"
+  },
+  {
+    "id": "A02",
+    "name": "Inwood-207 St",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A02N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A02S"
+      }
+    ],
+    "displayName": "Inwood-207 St"
+  },
+  {
+    "id": "220",
+    "name": "Jackson Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "220N"
+      },
+      {
+        "dir": "S",
+        "stopId": "220S"
+      }
+    ],
+    "displayName": "Jackson Av"
+  },
+  {
+    "id": "G14",
+    "name": "Jackson Hts-Roosevelt Av",
+    "lines": [
+      "E",
+      "F",
+      "FX",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G14S"
+      }
+    ],
+    "displayName": "Jackson Hts-Roosevelt Av"
+  },
+  {
+    "id": "G05",
+    "name": "Jamaica Center-Parsons/Archer",
+    "lines": [
+      "E",
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G05N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G05S"
+      }
+    ],
+    "displayName": "Jamaica Center-Parsons/Archer"
+  },
+  {
+    "id": "F01",
+    "name": "Jamaica-179 St",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F01S"
+      }
+    ],
+    "displayName": "Jamaica-179 St"
+  },
+  {
+    "id": "G07",
+    "name": "Jamaica-Van Wyck",
+    "lines": [
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G07S"
+      }
+    ],
+    "displayName": "Jamaica-Van Wyck"
+  },
+  {
+    "id": "A41",
+    "name": "Jay St-MetroTech",
+    "lines": [
+      "A",
+      "C",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A41N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A41S"
+      }
+    ],
+    "displayName": "Jay St-MetroTech (A, C, F, FX)"
+  },
+  {
+    "id": "R29",
+    "name": "Jay St-MetroTech",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R29S"
+      }
+    ],
+    "displayName": "Jay St-MetroTech (N, R, W)"
+  },
+  {
+    "id": "S24",
+    "name": "Jefferson Av",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S24N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S24S"
+      }
+    ],
+    "displayName": "Jefferson Av"
+  },
+  {
+    "id": "L15",
+    "name": "Jefferson St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L15S"
+      }
+    ],
+    "displayName": "Jefferson St"
+  },
+  {
+    "id": "707",
+    "name": "Junction Blvd",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "707N"
+      },
+      {
+        "dir": "S",
+        "stopId": "707S"
+      }
+    ],
+    "displayName": "Junction Blvd"
+  },
+  {
+    "id": "254",
+    "name": "Junius St",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "254N"
+      },
+      {
+        "dir": "S",
+        "stopId": "254S"
+      }
+    ],
+    "displayName": "Junius St"
+  },
+  {
+    "id": "F06",
+    "name": "Kew Gardens-Union Tpke",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F06S"
+      }
+    ],
+    "displayName": "Kew Gardens-Union Tpke"
+  },
+  {
+    "id": "D35",
+    "name": "Kings Hwy",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D35N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D35S"
+      }
+    ],
+    "displayName": "Kings Hwy (B, Q)"
+  },
+  {
+    "id": "F35",
+    "name": "Kings Hwy",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F35N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F35S"
+      }
+    ],
+    "displayName": "Kings Hwy (F, FX)"
+  },
+  {
+    "id": "N08",
+    "name": "Kings Hwy",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N08S"
+      }
+    ],
+    "displayName": "Kings Hwy (N, W)"
+  },
+  {
+    "id": "406",
+    "name": "Kingsbridge Rd",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "406N"
+      },
+      {
+        "dir": "S",
+        "stopId": "406S"
+      }
+    ],
+    "displayName": "Kingsbridge Rd (4)"
+  },
+  {
+    "id": "D04",
+    "name": "Kingsbridge Rd",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D04S"
+      }
+    ],
+    "displayName": "Kingsbridge Rd (B, D)"
+  },
+  {
+    "id": "249",
+    "name": "Kingston Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "249N"
+      },
+      {
+        "dir": "S",
+        "stopId": "249S"
+      }
+    ],
+    "displayName": "Kingston Av"
+  },
+  {
+    "id": "A47",
+    "name": "Kingston-Throop Avs",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A47N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A47S"
+      }
+    ],
+    "displayName": "Kingston-Throop Avs"
+  },
+  {
+    "id": "M09",
+    "name": "Knickerbocker Av",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M09S"
+      }
+    ],
+    "displayName": "Knickerbocker Av"
+  },
+  {
+    "id": "J31",
+    "name": "Kosciuszko St",
+    "lines": [
+      "J"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J31S"
+      }
+    ],
+    "displayName": "Kosciuszko St"
+  },
+  {
+    "id": "A43",
+    "name": "Lafayette Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A43N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A43S"
+      }
+    ],
+    "displayName": "Lafayette Av"
+  },
+  {
+    "id": "F11",
+    "name": "Lexington Av/53 St",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F11S"
+      }
+    ],
+    "displayName": "Lexington Av/53 St"
+  },
+  {
+    "id": "R11",
+    "name": "Lexington Av/59 St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R11S"
+      }
+    ],
+    "displayName": "Lexington Av/59 St"
+  },
+  {
+    "id": "B08",
+    "name": "Lexington Av/63 St",
+    "lines": [
+      "F",
+      "M",
+      "N",
+      "Q",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B08S"
+      }
+    ],
+    "displayName": "Lexington Av/63 St"
+  },
+  {
+    "id": "A52",
+    "name": "Liberty Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A52N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A52S"
+      }
+    ],
+    "displayName": "Liberty Av"
+  },
+  {
+    "id": "L26",
+    "name": "Livonia Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L26S"
+      }
+    ],
+    "displayName": "Livonia Av"
+  },
+  {
+    "id": "614",
+    "name": "Longwood Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "614N"
+      },
+      {
+        "dir": "S",
+        "stopId": "614S"
+      }
+    ],
+    "displayName": "Longwood Av"
+  },
+  {
+    "id": "M13",
+    "name": "Lorimer St",
+    "lines": [
+      "J",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M13S"
+      }
+    ],
+    "displayName": "Lorimer St (J, M)"
+  },
+  {
+    "id": "L10",
+    "name": "Lorimer St",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L10N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L10S"
+      }
+    ],
+    "displayName": "Lorimer St (L)"
+  },
+  {
+    "id": "106",
+    "name": "Marble Hill-225 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "106N"
+      },
+      {
+        "dir": "S",
+        "stopId": "106S"
+      }
+    ],
+    "displayName": "Marble Hill-225 St"
+  },
+  {
+    "id": "M16",
+    "name": "Marcy Av",
+    "lines": [
+      "J",
+      "M",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M16S"
+      }
+    ],
+    "displayName": "Marcy Av"
+  },
+  {
+    "id": "G29",
+    "name": "Metropolitan Av",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G29S"
+      }
+    ],
+    "displayName": "Metropolitan Av"
+  },
+  {
+    "id": "702",
+    "name": "Mets-Willets Point",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "702N"
+      },
+      {
+        "dir": "S",
+        "stopId": "702S"
+      }
+    ],
+    "displayName": "Mets-Willets Point"
+  },
+  {
+    "id": "M01",
+    "name": "Middle Village-Metropolitan Av",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M01S"
+      }
+    ],
+    "displayName": "Middle Village-Metropolitan Av"
+  },
+  {
+    "id": "603",
+    "name": "Middletown Rd",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "603N"
+      },
+      {
+        "dir": "S",
+        "stopId": "603S"
+      }
+    ],
+    "displayName": "Middletown Rd"
+  },
+  {
+    "id": "L13",
+    "name": "Montrose Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L13S"
+      }
+    ],
+    "displayName": "Montrose Av"
+  },
+  {
+    "id": "L14",
+    "name": "Morgan Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L14S"
+      }
+    ],
+    "displayName": "Morgan Av"
+  },
+  {
+    "id": "505",
+    "name": "Morris Park",
+    "lines": [
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "505N"
+      },
+      {
+        "dir": "S",
+        "stopId": "505S"
+      }
+    ],
+    "displayName": "Morris Park"
+  },
+  {
+    "id": "610",
+    "name": "Morrison Av-Soundview",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "610N"
+      },
+      {
+        "dir": "S",
+        "stopId": "610S"
+      }
+    ],
+    "displayName": "Morrison Av-Soundview"
+  },
+  {
+    "id": "402",
+    "name": "Mosholu Pkwy",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "402N"
+      },
+      {
+        "dir": "S",
+        "stopId": "402S"
+      }
+    ],
+    "displayName": "Mosholu Pkwy"
+  },
+  {
+    "id": "411",
+    "name": "Mt Eden Av",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "411N"
+      },
+      {
+        "dir": "S",
+        "stopId": "411S"
+      }
+    ],
+    "displayName": "Mt Eden Av"
+  },
+  {
+    "id": "M11",
+    "name": "Myrtle Av",
+    "lines": [
+      "J",
+      "M",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M11S"
+      }
+    ],
+    "displayName": "Myrtle Av"
+  },
+  {
+    "id": "G32",
+    "name": "Myrtle-Willoughby Avs",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G32N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G32S"
+      }
+    ],
+    "displayName": "Myrtle-Willoughby Avs"
+  },
+  {
+    "id": "L17",
+    "name": "Myrtle-Wyckoff Avs",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L17N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L17S"
+      }
+    ],
+    "displayName": "Myrtle-Wyckoff Avs (L)"
+  },
+  {
+    "id": "M08",
+    "name": "Myrtle-Wyckoff Avs",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M08N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M08S"
+      }
+    ],
+    "displayName": "Myrtle-Wyckoff Avs (M)"
+  },
+  {
+    "id": "G28",
+    "name": "Nassau Av",
+    "lines": [
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G28N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G28S"
+      }
+    ],
+    "displayName": "Nassau Av"
+  },
+  {
+    "id": "D38",
+    "name": "Neck Rd",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D38N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D38S"
+      }
+    ],
+    "displayName": "Neck Rd"
+  },
+  {
+    "id": "F39",
+    "name": "Neptune Av",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F39N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F39S"
+      }
+    ],
+    "displayName": "Neptune Av"
+  },
+  {
+    "id": "204",
+    "name": "Nereid Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "204N"
+      },
+      {
+        "dir": "S",
+        "stopId": "204S"
+      }
+    ],
+    "displayName": "Nereid Av"
+  },
+  {
+    "id": "234",
+    "name": "Nevins St",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "234N"
+      },
+      {
+        "dir": "S",
+        "stopId": "234S"
+      }
+    ],
+    "displayName": "Nevins St"
+  },
+  {
+    "id": "S22",
+    "name": "New Dorp",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S22S"
+      }
+    ],
+    "displayName": "New Dorp"
+  },
+  {
+    "id": "257",
+    "name": "New Lots Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "257N"
+      },
+      {
+        "dir": "S",
+        "stopId": "257S"
+      }
+    ],
+    "displayName": "New Lots Av (2, 3, 4, 5)"
+  },
+  {
+    "id": "L27",
+    "name": "New Lots Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L27S"
+      }
+    ],
+    "displayName": "New Lots Av (L)"
+  },
+  {
+    "id": "N04",
+    "name": "New Utrecht Av",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "N04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "N04S"
+      }
+    ],
+    "displayName": "New Utrecht Av"
+  },
+  {
+    "id": "246",
+    "name": "Newkirk Av-Little Haiti",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "246N"
+      },
+      {
+        "dir": "S",
+        "stopId": "246S"
+      }
+    ],
+    "displayName": "Newkirk Av-Little Haiti"
+  },
+  {
+    "id": "D31",
+    "name": "Newkirk Plaza",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D31S"
+      }
+    ],
+    "displayName": "Newkirk Plaza"
+  },
+  {
+    "id": "G16",
+    "name": "Northern Blvd",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G16S"
+      }
+    ],
+    "displayName": "Northern Blvd"
+  },
+  {
+    "id": "J21",
+    "name": "Norwood Av",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J21S"
+      }
+    ],
+    "displayName": "Norwood Av"
+  },
+  {
+    "id": "D01",
+    "name": "Norwood-205 St",
+    "lines": [
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D01S"
+      }
+    ],
+    "displayName": "Norwood-205 St"
+  },
+  {
+    "id": "248",
+    "name": "Nostrand Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "248N"
+      },
+      {
+        "dir": "S",
+        "stopId": "248S"
+      }
+    ],
+    "displayName": "Nostrand Av (2, 3, 4, 5)"
+  },
+  {
+    "id": "A46",
+    "name": "Nostrand Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A46N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A46S"
+      }
+    ],
+    "displayName": "Nostrand Av (A, C)"
+  },
+  {
+    "id": "S21",
+    "name": "Oakwood Heights",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S21S"
+      }
+    ],
+    "displayName": "Oakwood Heights"
+  },
+  {
+    "id": "D41",
+    "name": "Ocean Pkwy",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D41N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D41S"
+      }
+    ],
+    "displayName": "Ocean Pkwy"
+  },
+  {
+    "id": "S26",
+    "name": "Old Town",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S26S"
+      }
+    ],
+    "displayName": "Old Town"
+  },
+  {
+    "id": "A65",
+    "name": "Ozone Park-Lefferts Blvd",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A65N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A65S"
+      }
+    ],
+    "displayName": "Ozone Park-Lefferts Blvd"
+  },
+  {
+    "id": "S03",
+    "name": "Park Pl",
+    "lines": [
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S03S"
+      }
+    ],
+    "displayName": "Park Pl"
+  },
+  {
+    "id": "228",
+    "name": "Park Place",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "228N"
+      },
+      {
+        "dir": "S",
+        "stopId": "228S"
+      }
+    ],
+    "displayName": "Park Place"
+  },
+  {
+    "id": "608",
+    "name": "Parkchester",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "608N"
+      },
+      {
+        "dir": "S",
+        "stopId": "608S"
+      }
+    ],
+    "displayName": "Parkchester"
+  },
+  {
+    "id": "D27",
+    "name": "Parkside Av",
+    "lines": [
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D27S"
+      }
+    ],
+    "displayName": "Parkside Av"
+  },
+  {
+    "id": "F03",
+    "name": "Parsons Blvd",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F03N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F03S"
+      }
+    ],
+    "displayName": "Parsons Blvd"
+  },
+  {
+    "id": "601",
+    "name": "Pelham Bay Park",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "601N"
+      },
+      {
+        "dir": "S",
+        "stopId": "601S"
+      }
+    ],
+    "displayName": "Pelham Bay Park"
+  },
+  {
+    "id": "211",
+    "name": "Pelham Pkwy",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "211N"
+      },
+      {
+        "dir": "S",
+        "stopId": "211S"
+      }
+    ],
+    "displayName": "Pelham Pkwy (2, 5)"
+  },
+  {
+    "id": "504",
+    "name": "Pelham Pkwy",
+    "lines": [
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "504N"
+      },
+      {
+        "dir": "S",
+        "stopId": "504S"
+      }
+    ],
+    "displayName": "Pelham Pkwy (5)"
+  },
+  {
+    "id": "255",
+    "name": "Pennsylvania Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "255N"
+      },
+      {
+        "dir": "S",
+        "stopId": "255S"
+      }
+    ],
+    "displayName": "Pennsylvania Av"
+  },
+  {
+    "id": "S14",
+    "name": "Pleasant Plains",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S14N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S14S"
+      }
+    ],
+    "displayName": "Pleasant Plains"
+  },
+  {
+    "id": "241",
+    "name": "President St-Medgar Evers College",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "241N"
+      },
+      {
+        "dir": "S",
+        "stopId": "241S"
+      }
+    ],
+    "displayName": "President St-Medgar Evers College"
+  },
+  {
+    "id": "R22",
+    "name": "Prince St",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R22S"
+      }
+    ],
+    "displayName": "Prince St"
+  },
+  {
+    "id": "S15",
+    "name": "Prince's Bay",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S15S"
+      }
+    ],
+    "displayName": "Prince's Bay"
+  },
+  {
+    "id": "219",
+    "name": "Prospect Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "219N"
+      },
+      {
+        "dir": "S",
+        "stopId": "219S"
+      }
+    ],
+    "displayName": "Prospect Av (2, 5)"
+  },
+  {
+    "id": "R34",
+    "name": "Prospect Av",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R34N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R34S"
+      }
+    ],
+    "displayName": "Prospect Av (D, N, R, W)"
+  },
+  {
+    "id": "D26",
+    "name": "Prospect Park",
+    "lines": [
+      "B",
+      "Q",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D26S"
+      }
+    ],
+    "displayName": "Prospect Park"
+  },
+  {
+    "id": "G21",
+    "name": "Queens Plaza",
+    "lines": [
+      "E",
+      "F",
+      "FX",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G21N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G21S"
+      }
+    ],
+    "displayName": "Queens Plaza"
+  },
+  {
+    "id": "718",
+    "name": "Queensboro Plaza",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "718N"
+      },
+      {
+        "dir": "S",
+        "stopId": "718S"
+      }
+    ],
+    "displayName": "Queensboro Plaza (7, 7X)"
+  },
+  {
+    "id": "R09",
+    "name": "Queensboro Plaza",
+    "lines": [
+      "N",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R09S"
+      }
+    ],
+    "displayName": "Queensboro Plaza (N, W)"
+  },
+  {
+    "id": "A49",
+    "name": "Ralph Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A49N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A49S"
+      }
+    ],
+    "displayName": "Ralph Av"
+  },
+  {
+    "id": "139",
+    "name": "Rector St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "139N"
+      },
+      {
+        "dir": "S",
+        "stopId": "139S"
+      }
+    ],
+    "displayName": "Rector St (1)"
+  },
+  {
+    "id": "R26",
+    "name": "Rector St",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R26N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R26S"
+      }
+    ],
+    "displayName": "Rector St (N, R, W)"
+  },
+  {
+    "id": "S13",
+    "name": "Richmond Valley",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S13N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S13S"
+      }
+    ],
+    "displayName": "Richmond Valley"
+  },
+  {
+    "id": "253",
+    "name": "Rockaway Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "253N"
+      },
+      {
+        "dir": "S",
+        "stopId": "253S"
+      }
+    ],
+    "displayName": "Rockaway Av (2, 3, 4, 5)"
+  },
+  {
+    "id": "A50",
+    "name": "Rockaway Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A50N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A50S"
+      }
+    ],
+    "displayName": "Rockaway Av (A, C)"
+  },
+  {
+    "id": "A61",
+    "name": "Rockaway Blvd",
+    "lines": [
+      "A"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A61N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A61S"
+      }
+    ],
+    "displayName": "Rockaway Blvd"
+  },
+  {
+    "id": "H15",
+    "name": "Rockaway Park-Beach 116 St",
+    "lines": [
+      "A",
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "H15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "H15S"
+      }
+    ],
+    "displayName": "Rockaway Park-Beach 116 St"
+  },
+  {
+    "id": "B06",
+    "name": "Roosevelt Island",
+    "lines": [
+      "F",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "B06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "B06S"
+      }
+    ],
+    "displayName": "Roosevelt Island"
+  },
+  {
+    "id": "252",
+    "name": "Saratoga Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "252N"
+      },
+      {
+        "dir": "S",
+        "stopId": "252S"
+      }
+    ],
+    "displayName": "Saratoga Av"
+  },
+  {
+    "id": "M06",
+    "name": "Seneca Av",
+    "lines": [
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "M06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "M06S"
+      }
+    ],
+    "displayName": "Seneca Av"
+  },
+  {
+    "id": "D39",
+    "name": "Sheepshead Bay",
+    "lines": [
+      "B",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D39N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D39S"
+      }
+    ],
+    "displayName": "Sheepshead Bay"
+  },
+  {
+    "id": "A54",
+    "name": "Shepherd Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A54N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A54S"
+      }
+    ],
+    "displayName": "Shepherd Av"
+  },
+  {
+    "id": "217",
+    "name": "Simpson St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "217N"
+      },
+      {
+        "dir": "S",
+        "stopId": "217S"
+      }
+    ],
+    "displayName": "Simpson St"
+  },
+  {
+    "id": "F22",
+    "name": "Smith-9 Sts",
+    "lines": [
+      "F",
+      "G"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F22N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F22S"
+      }
+    ],
+    "displayName": "Smith-9 Sts"
+  },
+  {
+    "id": "142",
+    "name": "South Ferry",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "142N"
+      },
+      {
+        "dir": "S",
+        "stopId": "142S"
+      }
+    ],
+    "displayName": "South Ferry"
+  },
+  {
+    "id": "638",
+    "name": "Spring St",
+    "lines": [
+      "4",
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "638N"
+      },
+      {
+        "dir": "S",
+        "stopId": "638S"
+      }
+    ],
+    "displayName": "Spring St (4, 6, 6X)"
+  },
+  {
+    "id": "A33",
+    "name": "Spring St",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A33N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A33S"
+      }
+    ],
+    "displayName": "Spring St (A, C, E)"
+  },
+  {
+    "id": "S31",
+    "name": "St George",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S31N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S31S"
+      }
+    ],
+    "displayName": "St George"
+  },
+  {
+    "id": "609",
+    "name": "St Lawrence Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "609N"
+      },
+      {
+        "dir": "S",
+        "stopId": "609S"
+      }
+    ],
+    "displayName": "St Lawrence Av"
+  },
+  {
+    "id": "S29",
+    "name": "Stapleton",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S29N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S29S"
+      }
+    ],
+    "displayName": "Stapleton"
+  },
+  {
+    "id": "G19",
+    "name": "Steinway St",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G19N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G19S"
+      }
+    ],
+    "displayName": "Steinway St"
+  },
+  {
+    "id": "242",
+    "name": "Sterling St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "242N"
+      },
+      {
+        "dir": "S",
+        "stopId": "242S"
+      }
+    ],
+    "displayName": "Sterling St"
+  },
+  {
+    "id": "F04",
+    "name": "Sutphin Blvd",
+    "lines": [
+      "E",
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F04N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F04S"
+      }
+    ],
+    "displayName": "Sutphin Blvd"
+  },
+  {
+    "id": "G06",
+    "name": "Sutphin Blvd-Archer Av-JFK Airport",
+    "lines": [
+      "E",
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G06N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G06S"
+      }
+    ],
+    "displayName": "Sutphin Blvd-Archer Av-JFK Airport"
+  },
+  {
+    "id": "L25",
+    "name": "Sutter Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L25N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L25S"
+      }
+    ],
+    "displayName": "Sutter Av"
+  },
+  {
+    "id": "251",
+    "name": "Sutter Av-Rutland Rd",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "251N"
+      },
+      {
+        "dir": "S",
+        "stopId": "251S"
+      }
+    ],
+    "displayName": "Sutter Av-Rutland Rd"
+  },
+  {
+    "id": "127",
+    "name": "Times Sq-42 St",
+    "lines": [
+      "1",
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "127N"
+      },
+      {
+        "dir": "S",
+        "stopId": "127S"
+      }
+    ],
+    "displayName": "Times Sq-42 St (1, 2, 3)"
+  },
+  {
+    "id": "725",
+    "name": "Times Sq-42 St",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "725N"
+      },
+      {
+        "dir": "S",
+        "stopId": "725S"
+      }
+    ],
+    "displayName": "Times Sq-42 St (7, 7X)"
+  },
+  {
+    "id": "R16",
+    "name": "Times Sq-42 St",
+    "lines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R16N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R16S"
+      }
+    ],
+    "displayName": "Times Sq-42 St (N, Q, R, W)"
+  },
+  {
+    "id": "902",
+    "name": "Times Sq-42 St",
+    "lines": [
+      "S"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "902N"
+      },
+      {
+        "dir": "S",
+        "stopId": "902S"
+      }
+    ],
+    "displayName": "Times Sq-42 St (S)"
+  },
+  {
+    "id": "S30",
+    "name": "Tompkinsville",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S30N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S30S"
+      }
+    ],
+    "displayName": "Tompkinsville"
+  },
+  {
+    "id": "S09",
+    "name": "Tottenville",
+    "lines": [
+      "SIR"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "S09N"
+      },
+      {
+        "dir": "S",
+        "stopId": "S09S"
+      }
+    ],
+    "displayName": "Tottenville"
+  },
+  {
+    "id": "D07",
+    "name": "Tremont Av",
+    "lines": [
+      "B",
+      "D"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D07N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D07S"
+      }
+    ],
+    "displayName": "Tremont Av"
+  },
+  {
+    "id": "R32",
+    "name": "Union St",
+    "lines": [
+      "D",
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R32N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R32S"
+      }
+    ],
+    "displayName": "Union St"
+  },
+  {
+    "id": "A48",
+    "name": "Utica Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A48N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A48S"
+      }
+    ],
+    "displayName": "Utica Av"
+  },
+  {
+    "id": "101",
+    "name": "Van Cortlandt Park-242 St",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "101N"
+      },
+      {
+        "dir": "S",
+        "stopId": "101S"
+      }
+    ],
+    "displayName": "Van Cortlandt Park-242 St"
+  },
+  {
+    "id": "256",
+    "name": "Van Siclen Av",
+    "lines": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "256N"
+      },
+      {
+        "dir": "S",
+        "stopId": "256S"
+      }
+    ],
+    "displayName": "Van Siclen Av (2, 3, 4, 5)"
+  },
+  {
+    "id": "A53",
+    "name": "Van Siclen Av",
+    "lines": [
+      "A",
+      "C"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A53N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A53S"
+      }
+    ],
+    "displayName": "Van Siclen Av (A, C)"
+  },
+  {
+    "id": "J23",
+    "name": "Van Siclen Av",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J23N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J23S"
+      }
+    ],
+    "displayName": "Van Siclen Av (J, Z)"
+  },
+  {
+    "id": "721",
+    "name": "Vernon Blvd-Jackson Av",
+    "lines": [
+      "7",
+      "7X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "721N"
+      },
+      {
+        "dir": "S",
+        "stopId": "721S"
+      }
+    ],
+    "displayName": "Vernon Blvd-Jackson Av"
+  },
+  {
+    "id": "A32",
+    "name": "W 4 St-Wash Sq",
+    "lines": [
+      "A",
+      "C",
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "A32N"
+      },
+      {
+        "dir": "S",
+        "stopId": "A32S"
+      }
+    ],
+    "displayName": "W 4 St-Wash Sq (A, C, E)"
+  },
+  {
+    "id": "D20",
+    "name": "W 4 St-Wash Sq",
+    "lines": [
+      "B",
+      "D",
+      "F",
+      "FX",
+      "M"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D20S"
+      }
+    ],
+    "displayName": "W 4 St-Wash Sq (B, D, F, FX, M)"
+  },
+  {
+    "id": "D42",
+    "name": "W 8 St-NY Aquarium",
+    "lines": [
+      "F",
+      "FX",
+      "Q"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "D42N"
+      },
+      {
+        "dir": "S",
+        "stopId": "D42S"
+      }
+    ],
+    "displayName": "W 8 St-NY Aquarium"
+  },
+  {
+    "id": "201",
+    "name": "Wakefield-241 St",
+    "lines": [
+      "2"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "201N"
+      },
+      {
+        "dir": "S",
+        "stopId": "201S"
+      }
+    ],
+    "displayName": "Wakefield-241 St"
+  },
+  {
+    "id": "230",
+    "name": "Wall St",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "230N"
+      },
+      {
+        "dir": "S",
+        "stopId": "230S"
+      }
+    ],
+    "displayName": "Wall St (2, 3)"
+  },
+  {
+    "id": "419",
+    "name": "Wall St",
+    "lines": [
+      "4",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "419N"
+      },
+      {
+        "dir": "S",
+        "stopId": "419S"
+      }
+    ],
+    "displayName": "Wall St (4, 5)"
+  },
+  {
+    "id": "214",
+    "name": "West Farms Sq-E Tremont Av",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "214N"
+      },
+      {
+        "dir": "S",
+        "stopId": "214S"
+      }
+    ],
+    "displayName": "West Farms Sq-E Tremont Av"
+  },
+  {
+    "id": "604",
+    "name": "Westchester Sq-E Tremont Av",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "604N"
+      },
+      {
+        "dir": "S",
+        "stopId": "604S"
+      }
+    ],
+    "displayName": "Westchester Sq-E Tremont Av"
+  },
+  {
+    "id": "R27",
+    "name": "Whitehall St-South Ferry",
+    "lines": [
+      "N",
+      "R",
+      "W"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "R27N"
+      },
+      {
+        "dir": "S",
+        "stopId": "R27S"
+      }
+    ],
+    "displayName": "Whitehall St-South Ferry"
+  },
+  {
+    "id": "612",
+    "name": "Whitlock Av",
+    "lines": [
+      "6"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "612N"
+      },
+      {
+        "dir": "S",
+        "stopId": "612S"
+      }
+    ],
+    "displayName": "Whitlock Av"
+  },
+  {
+    "id": "L20",
+    "name": "Wilson Av",
+    "lines": [
+      "L"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "L20N"
+      },
+      {
+        "dir": "S",
+        "stopId": "L20S"
+      }
+    ],
+    "displayName": "Wilson Av"
+  },
+  {
+    "id": "243",
+    "name": "Winthrop St",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "243N"
+      },
+      {
+        "dir": "S",
+        "stopId": "243S"
+      }
+    ],
+    "displayName": "Winthrop St"
+  },
+  {
+    "id": "G11",
+    "name": "Woodhaven Blvd",
+    "lines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "G11N"
+      },
+      {
+        "dir": "S",
+        "stopId": "G11S"
+      }
+    ],
+    "displayName": "Woodhaven Blvd (E, F, M, R)"
+  },
+  {
+    "id": "J15",
+    "name": "Woodhaven Blvd",
+    "lines": [
+      "J",
+      "Z"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "J15N"
+      },
+      {
+        "dir": "S",
+        "stopId": "J15S"
+      }
+    ],
+    "displayName": "Woodhaven Blvd (J, Z)"
+  },
+  {
+    "id": "401",
+    "name": "Woodlawn",
+    "lines": [
+      "4"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "401N"
+      },
+      {
+        "dir": "S",
+        "stopId": "401S"
+      }
+    ],
+    "displayName": "Woodlawn"
+  },
+  {
+    "id": "E01",
+    "name": "World Trade Center",
+    "lines": [
+      "E"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "E01N"
+      },
+      {
+        "dir": "S",
+        "stopId": "E01S"
+      }
+    ],
+    "displayName": "World Trade Center"
+  },
+  {
+    "id": "138",
+    "name": "WTC Cortlandt",
+    "lines": [
+      "1"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "138N"
+      },
+      {
+        "dir": "S",
+        "stopId": "138S"
+      }
+    ],
+    "displayName": "WTC Cortlandt"
+  },
+  {
+    "id": "F18",
+    "name": "York St",
+    "lines": [
+      "F",
+      "FX"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "F18N"
+      },
+      {
+        "dir": "S",
+        "stopId": "F18S"
+      }
+    ],
+    "displayName": "York St"
+  },
+  {
+    "id": "606",
+    "name": "Zerega Av",
+    "lines": [
+      "6",
+      "6X"
+    ],
+    "borough": "Unknown",
+    "directions": [
+      {
+        "dir": "N",
+        "stopId": "606N"
+      },
+      {
+        "dir": "S",
+        "stopId": "606S"
+      }
+    ],
+    "displayName": "Zerega Av"
+  }
+]
