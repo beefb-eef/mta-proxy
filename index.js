@@ -8,7 +8,7 @@ import path from "node:path";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Put your MTA key in env vars (Render): MTA_API_KEY
+// Optional (works without it)
 const MTA_API_KEY = process.env.MTA_API_KEY || "";
 
 // If no line is provided, we’ll fetch ALL feeds (fallback)
@@ -63,7 +63,8 @@ const FEED_BY_LINE = {
   "7": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
   S: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
 
-  // Staten Island Railway
+  // Staten Island Railway (routeId often shows as SI)
+  SI: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
   SIR: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
 };
 
@@ -127,8 +128,8 @@ function filterDeparturesForStops(feeds, stopIds, allowedLines = []) {
   const stopSet = new Set(stopIds.map(String));
   const allowSet = new Set((allowedLines || []).map(normalizeLine).filter(Boolean));
 
-  // Dedupe across feeds (some overlap happens occasionally)
-  const seen = new Set(); // key: route|stop|timestamp|tripId (tripId optional)
+  // Dedupe across feeds
+  const seen = new Set(); // key: route|stop|timestamp|tripId
 
   feeds.forEach((feed) => {
     feed.entity.forEach((entity) => {
@@ -176,10 +177,6 @@ function filterDeparturesForStops(feeds, stopIds, allowedLines = []) {
 }
 
 // ---------- API: /mta ----------
-// Examples:
-//   /mta?stopId=226S
-//   /mta?stopId=226S&line=1
-//   /mta?stopId=226S&stopId=A16S&line=1&line=2
 app.get("/mta", async (req, res) => {
   try {
     const stopIds = asArrayParam(req.query.stopId).map(String).filter(Boolean);
@@ -187,7 +184,6 @@ app.get("/mta", async (req, res) => {
 
     if (!stopIds.length) return res.status(400).json({ error: "Provide stopId" });
 
-    // ✅ fetch only the feeds needed for the requested line(s)
     const feeds = await fetchFeedsForLines(lines);
     const departures = filterDeparturesForStops(feeds, stopIds, lines);
 
@@ -203,7 +199,7 @@ app.get("/mta", async (req, res) => {
   }
 });
 
-// ---------- API: stations for dropdowns ----------
+// ---------- API: stations ----------
 app.get("/api/stations", (req, res) => {
   const data = readStationsUi();
   if (!data) {
@@ -215,14 +211,14 @@ app.get("/api/stations", (req, res) => {
   res.json(data);
 });
 
-// ---------- UI: Borough -> Station -> Direction -> Line (optional) ----------
+// ---------- UI: Borough -> Station -> Direction -> Line(s) ----------
 app.get("/", (req, res) => {
   res.send(`<!doctype html>
 <html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MTA Board</title>
+<title>MTA Train Trax</title>
 <style>
 :root{color-scheme:dark;}
 *{box-sizing:border-box;}
@@ -252,6 +248,7 @@ table{width:100%;border-collapse:collapse;margin-top:10px;}
 th,td{padding:8px 2px;font-size:1rem;}
 th{color:#8b949e;border-bottom:1px solid #30363d;text-align:left;}
 tr+tr td{border-top:1px solid #21262d;}
+
 .route-pill{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:30px;height:30px;border-radius:999px;
@@ -263,14 +260,14 @@ tr+tr td{border-top:1px solid #21262d;}
 .route-blue{ background:#0039A6; }      /* A/C/E */
 .route-orange{ background:#FF6319; }    /* B/D/F/M */
 .route-grey{ background:#6c757d; }      /* S */
-.route-brightgreen{ background:#00A550; } /* G (bright green) */
+.route-brightgreen{ background:#00A550; } /* G */
 .route-brown{ background:#996633; }     /* J/Z */
 .route-yellow{ background:#FCCC0A; color:#111; } /* N/Q/R/W */
 .route-lightgrey{ background:#A7A9AC; color:#111; } /* L */
 .route-red{ background:#EE352E; }       /* 1/2/3 */
 .route-green{ background:#00933C; }     /* 4/5/6 */
 .route-purple{ background:#B933AD; }    /* 7 */
-.route-lightblue{ background:#5DA9E9; color:#111; } /* SIR */
+.route-lightblue{ background:#5DA9E9; color:#111; } /* SI/SIR */
 
 .footerRow{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:8px;}
 button{
@@ -278,11 +275,50 @@ button{
   background:#0b0f17;color:#f0f6fc;cursor:pointer;font-weight:800;
 }
 button:hover{background:#0f1624;}
+
+/* Mobile-friendly line chips */
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid #30363d;
+  background:#0b0f17;
+  color:#f0f6fc;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+  font-weight:800;
+}
+.chip input{
+  width:18px;
+  height:18px;
+}
+.chip:active{
+  transform: scale(0.99);
+}
+.chip .badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:28px;
+  height:28px;
+  border-radius:999px;
+  padding:0 10px;
+  color:#fff;
+  font-weight:900;
+}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>MTA Board</h1>
+  <h1>MTA Train Trax</h1>
 
   <div class="panel">
     <div class="controls">
@@ -290,24 +326,38 @@ button:hover{background:#0f1624;}
         <label for="borough">Borough</label>
         <select id="borough"></select>
       </div>
+
       <div>
         <label for="station">Station</label>
         <select id="station" disabled></select>
       </div>
+
       <div>
         <label for="direction">Direction</label>
         <select id="direction" disabled></select>
         <div class="hint">Shown only if N/S stop IDs exist.</div>
       </div>
-      <div>
-        <label for="line">Line (optional)</label>
-        <select id="line" disabled></select>
-        <div class="hint">Choose one line, or leave blank for all lines.</div>
+
+      <div id="lineWrap">
+        <label>Line(s) (optional)</label>
+        <div class="hint" style="margin:0 0 8px;">
+          Tap to toggle lines. Leave all off for all lines.
+        </div>
+        <div id="lineChips" class="chips" aria-label="Line filters"></div>
+        <div class="hint" style="margin-top:8px;">
+          <button type="button" id="clearLines" style="padding:8px 10px;border-radius:10px;border:1px solid #30363d;background:#0b0f17;color:#f0f6fc;cursor:pointer;font-weight:800;">
+            Clear lines
+          </button>
+        </div>
       </div>
     </div>
+
     <div class="footerRow">
       <div class="hint" id="status">Loading stations…</div>
-      <button id="refresh">Refresh</button>
+      <div style="display:flex; gap:10px;">
+        <button id="editFilters" style="display:none;">Edit filters</button>
+        <button id="refresh">Refresh</button>
+      </div>
     </div>
   </div>
 
@@ -316,7 +366,7 @@ button:hover{background:#0f1624;}
       <div class="title">Your next train</div>
       <div class="sub" id="subtitle"></div>
     </div>
-    <div class="hint" id="updated" style="margin-top:6px;"> </div>
+    <div class="hint" id="updated" style="margin-top:6px;"></div>
     <table>
       <thead><tr><th>Route</th><th>Stop</th><th>ETA</th></tr></thead>
       <tbody id="tbody">
@@ -330,7 +380,6 @@ button:hover{background:#0f1624;}
 const boroughSel = document.getElementById("borough");
 const stationSel = document.getElementById("station");
 const dirSel = document.getElementById("direction");
-const lineSel = document.getElementById("line");
 const statusEl = document.getElementById("status");
 const refreshBtn = document.getElementById("refresh");
 
@@ -339,8 +388,14 @@ const tbody = document.getElementById("tbody");
 const updated = document.getElementById("updated");
 const subtitle = document.getElementById("subtitle");
 
+const lineWrap = document.getElementById("lineWrap");
+const editFiltersBtn = document.getElementById("editFilters");
+const lineChips = document.getElementById("lineChips");
+const clearLinesBtn = document.getElementById("clearLines");
+
 let stations = [];
 let filteredStations = [];
+let selectedLineSet = new Set(); // selected lines from chips
 
 function unique(arr){ return Array.from(new Set(arr)).sort((a,b)=>a.localeCompare(b, undefined, {sensitivity:"base"})); }
 
@@ -361,16 +416,156 @@ function setOptions(select, items, placeholder){
 function resetDownstream(){
   stationSel.disabled = true;
   dirSel.disabled = true;
-  lineSel.disabled = true;
   setOptions(stationSel, [], "Choose station");
   setOptions(dirSel, [], "Choose direction");
-  setOptions(lineSel, [], "Choose line (optional)");
+
+  selectedLineSet.clear();
+  lineChips.innerHTML = "";
+  lineWrap.style.display = "";
+  editFiltersBtn.style.display = "none";
 }
 
 function selectedStation(){
   const id = stationSel.value;
   return filteredStations.find(s => String(s.id) === String(id));
 }
+
+function cleanLines(lines){
+  return (lines || [])
+    .map(l => String(l || "").trim().toUpperCase())
+    .filter(Boolean)
+    .filter(l => !l.includes("X"));
+}
+
+function cleanStationLabel(label){
+  label = String(label || "");
+  const m = label.match(/^(.*)\\((.*)\\)\\s*$/);
+  if (!m) return label;
+
+  const base = m[1].trim();
+  const inside = m[2]
+    .split(",")
+    .map(s => s.trim())
+    .filter(Boolean)
+    .filter(s => !s.toUpperCase().includes("X"));
+
+  return inside.length ? \`\${base} (\${inside.join(", ")})\` : base;
+}
+
+function directionText(){
+  const d = (dirSel.value || "").toUpperCase();
+  if (!d) return "";
+  const last = d.slice(-1);
+  if (last === "N") return "Northbound";
+  if (last === "S") return "Southbound";
+  return "";
+}
+
+function pill(route){
+  route = String(route || "").toUpperCase().trim();
+  if(["A","C","E"].includes(route)) return "route-pill route-blue";
+  if(["B","D","F","M"].includes(route)) return "route-pill route-orange";
+  if(route === "S") return "route-pill route-grey";
+  if(route === "G") return "route-pill route-brightgreen";
+  if(["J","Z"].includes(route)) return "route-pill route-brown";
+  if(["N","Q","R","W"].includes(route)) return "route-pill route-yellow";
+  if(route === "L") return "route-pill route-lightgrey";
+  if(["1","2","3"].includes(route)) return "route-pill route-red";
+  if(["4","5","6"].includes(route)) return "route-pill route-green";
+  if(route === "7") return "route-pill route-purple";
+  if(route === "SIR" || route === "SI") return "route-pill route-lightblue";
+  return "route-pill";
+}
+
+function badgeClass(route){
+  // badge uses the same color classes as pills
+  route = String(route||"").toUpperCase().trim();
+  if(["A","C","E"].includes(route)) return "badge route-blue";
+  if(["B","D","F","M"].includes(route)) return "badge route-orange";
+  if(route === "S") return "badge route-grey";
+  if(route === "G") return "badge route-brightgreen";
+  if(["J","Z"].includes(route)) return "badge route-brown";
+  if(["N","Q","R","W"].includes(route)) return "badge route-yellow";
+  if(route === "L") return "badge route-lightgrey";
+  if(["1","2","3"].includes(route)) return "badge route-red";
+  if(["4","5","6"].includes(route)) return "badge route-green";
+  if(route === "7") return "badge route-purple";
+  if(route === "SIR" || route === "SI") return "badge route-lightblue";
+  return "badge";
+}
+
+function toggleLine(line){
+  line = String(line || "").trim().toUpperCase();
+  if(!line || line.includes("X")) return;
+
+  if (selectedLineSet.has(line)) selectedLineSet.delete(line);
+  else selectedLineSet.add(line);
+
+  refresh();
+  maybeCollapseLineSelector();
+}
+
+function getSelectedLines(){
+  return Array.from(selectedLineSet);
+}
+
+function renderLineChips(lines){
+  const clean = cleanLines(lines);
+  lineChips.innerHTML = "";
+
+  clean.forEach(line => {
+    const id = "line_" + line.replace(/[^a-z0-9]/gi, "_");
+
+    const wrap = document.createElement("label");
+    wrap.className = "chip";
+    wrap.htmlFor = id;
+
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.id = id;
+    cb.checked = selectedLineSet.has(line);
+    cb.addEventListener("change", () => toggleLine(line));
+
+    const badge = document.createElement("span");
+    badge.className = badgeClass(line);
+    badge.textContent = line;
+
+    const text = document.createElement("span");
+    text.textContent = line;
+
+    wrap.appendChild(cb);
+    wrap.appendChild(badge);
+    wrap.appendChild(text);
+    lineChips.appendChild(wrap);
+  });
+}
+
+// Collapsing behavior for the line selector area
+editFiltersBtn.addEventListener("click", () => {
+  lineWrap.style.display = "";
+  editFiltersBtn.style.display = "none";
+});
+
+function maybeCollapseLineSelector(){
+  const hasBorough = !!boroughSel.value;
+  const hasStation = !!stationSel.value;
+  const hasDir = dirSel.disabled ? true : !!dirSel.value;
+
+  if (hasBorough && hasStation && hasDir) {
+    lineWrap.style.display = "none";
+    editFiltersBtn.style.display = "";
+  } else {
+    lineWrap.style.display = "";
+    editFiltersBtn.style.display = "none";
+  }
+}
+
+clearLinesBtn.addEventListener("click", () => {
+  selectedLineSet.clear();
+  renderLineChips(selectedStation()?.lines || []);
+  refresh();
+  maybeCollapseLineSelector();
+});
 
 async function loadStations(){
   statusEl.textContent = "Loading stations…";
@@ -384,7 +579,7 @@ async function loadStations(){
   const boroughs = unique(stations.map(s => s.borough).filter(b => b && b !== "Unknown"));
   setOptions(boroughSel, boroughs.map(b => ({value:b, label:b})), "Choose borough");
 
-  statusEl.textContent = "Pick borough → station → direction → line.";
+  statusEl.textContent = "Pick borough → station → direction → line(s).";
 }
 
 boroughSel.addEventListener("change", () => {
@@ -394,58 +589,48 @@ boroughSel.addEventListener("change", () => {
 
   filteredStations = stations.filter(s => s.borough === b);
   stationSel.disabled = false;
+
   setOptions(
     stationSel,
-    filteredStations.map(s => ({ value: s.id, label: s.displayName || s.name })),
+    filteredStations.map(s => ({ value: s.id, label: cleanStationLabel(s.displayName || s.name) })),
     "Choose station"
   );
+
+  maybeCollapseLineSelector();
 });
 
 stationSel.addEventListener("change", () => {
   dirSel.disabled = true;
-  lineSel.disabled = true;
   setOptions(dirSel, [], "Choose direction");
-  setOptions(lineSel, [], "Choose line (optional)");
+
+  selectedLineSet.clear();
+  lineChips.innerHTML = "";
 
   const s = selectedStation();
   if(!s) return;
 
-  // Directions: only enable if we actually have N and/or S stopIds
   const dirs = (s.directions || []);
   if(dirs.length > 1){
     dirSel.disabled = false;
     setOptions(dirSel, dirs.map(d => ({ value: d.stopId, label: d.dir })), "Choose direction");
   }
 
-  // Lines: optional single selection (leave blank for all)
-  lineSel.disabled = false;
-  setOptions(lineSel, (s.lines || []).map(l => ({ value:l, label:l })), "Choose line (optional)");
+  // Render chips for this station's lines
+  renderLineChips(s.lines || []);
 
+  maybeCollapseLineSelector();
   refresh();
 });
 
-dirSel.addEventListener("change", refresh);
-lineSel.addEventListener("change", refresh);
-refreshBtn.addEventListener("click", refresh);
+dirSel.addEventListener("change", () => {
+  maybeCollapseLineSelector();
+  refresh();
+});
 
-function pill(route){
-  route = String(route || "").toUpperCase().trim();
-
-  if(["A","C","E"].includes(route)) return "route-pill route-blue";
-  if(["B","D","F","M"].includes(route)) return "route-pill route-orange";
-  if(route === "S") return "route-pill route-grey";
-  if(route === "G") return "route-pill route-brightgreen";
-  if(["J","Z"].includes(route)) return "route-pill route-brown";
-  if(["N","Q","R","W"].includes(route)) return "route-pill route-yellow";
-  if(route === "L") return "route-pill route-lightgrey";
-  if(["1","2","3"].includes(route)) return "route-pill route-red";
-  if(["4","5","6"].includes(route)) return "route-pill route-green";
-  if(route === "7") return "route-pill route-purple";
-  if(route === "SIR") return "route-pill route-lightblue";
-
-  return "route-pill";
-}
-
+refreshBtn.addEventListener("click", () => {
+  maybeCollapseLineSelector();
+  refresh();
+});
 
 async function refresh(){
   const s = selectedStation();
@@ -455,22 +640,36 @@ async function refresh(){
   }
 
   board.style.display = "block";
-  subtitle.textContent = (s.borough ? s.borough + " • " : "") + (s.displayName || s.name);
+  const baseLabel = cleanStationLabel(s.displayName || s.name);
+  const dirLabel = directionText();
+  subtitle.textContent =
+    (s.borough ? s.borough + " • " : "") +
+    baseLabel +
+    (dirLabel ? " • " + dirLabel : "");
 
-  const chosenStopId = dirSel.value || s.id; // direction stopId if chosen else station id fallback
-  const chosenLine = lineSel.value || "";
+  // Choose stopId: direction stopId if chosen; else if only one direction exists use it; else station id fallback
+  let chosenStopId = dirSel.value;
+  if (!chosenStopId) {
+    if (s.directions && s.directions.length === 1) chosenStopId = s.directions[0].stopId;
+    else chosenStopId = s.id;
+  }
+
+  const chosenLines = getSelectedLines().filter(l => !l.includes("X"));
 
   statusEl.textContent = "Loading departures…";
   tbody.innerHTML = '<tr><td colspan="3">Loading…</td></tr>';
 
   const url = new URL(location.origin + "/mta");
   url.searchParams.append("stopId", chosenStopId);
-  if (chosenLine) url.searchParams.append("line", chosenLine);
+
+  for (const l of chosenLines) {
+    url.searchParams.append("line", l);
+  }
 
   const r = await fetch(url.toString());
   const d = await r.json();
 
-  const deps = (d.departures || []).slice(0, 12);
+  const deps = (d.departures || []).slice(0, 5);
   tbody.innerHTML = "";
 
   for(const dep of deps){
@@ -507,7 +706,6 @@ setInterval(() => {
 });
 
 // ---------- start ----------
-
 app.listen(PORT, () => {
   console.log("Server listening on port " + PORT);
   console.log("MTA GTFS-Realtime feeds: public access enabled");
