@@ -211,7 +211,7 @@ app.get("/api/stations", (req, res) => {
   res.json(data);
 });
 
-// ---------- UI: Borough -> Station -> Direction -> Line(s) ----------
+// ---------- UI: Direction -> Borough -> Stop -> Line(s) ----------
 app.get("/", (req, res) => {
   res.send(`<!doctype html>
 <html>
@@ -229,21 +229,17 @@ body{
 }
 .container{max-width:1100px;width:100%;display:flex;flex-direction:column;gap:14px;}
 h1{margin:0;font-size:1.8rem;letter-spacing:.02em;}
+
 .panel,.board{
   background:#11151d;border-radius:16px;padding:14px 14px;
   box-shadow:0 14px 35px rgba(0,0,0,.65);
 }
-.controls{display:grid;grid-template-columns:1fr;gap:10px;}
-@media(min-width:900px){.controls{grid-template-columns:1.1fr 1.6fr 1fr 1.2fr;}}
-label{font-size:.82rem;color:#8b949e;display:block;margin:0 0 6px;}
-select{
-  width:100%;padding:10px;border-radius:12px;
-  border:1px solid #30363d;background:#0b0f17;color:#f0f6fc;font-size:14px;
-}
-.hint{color:#8b949e;font-size:.8rem;margin-top:6px;}
+
+.hint{color:#8b949e;font-size:.86rem;margin-top:6px;}
 .meta{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;}
 .meta .title{font-size:1.25rem;font-weight:800;}
-.meta .sub{color:#8b949e;font-size:.85rem;}
+.meta .sub{color:#8b949e;font-size:.9rem;}
+
 table{width:100%;border-collapse:collapse;margin-top:10px;}
 th,td{padding:8px 2px;font-size:1rem;}
 th{color:#8b949e;border-bottom:1px solid #30363d;text-align:left;}
@@ -255,7 +251,6 @@ tr+tr td{border-top:1px solid #21262d;}
   font-size:.95rem;font-weight:900;color:#fff;padding:0 12px;
   background:#30363d;
 }
-
 /* Line colors */
 .route-blue{ background:#0039A6; }      /* A/C/E */
 .route-orange{ background:#FF6319; }    /* B/D/F/M */
@@ -275,44 +270,53 @@ button{
   background:#0b0f17;color:#f0f6fc;cursor:pointer;font-weight:800;
 }
 button:hover{background:#0f1624;}
+button.secondary{opacity:.95;}
+button.ghost{background:transparent;}
+button[disabled]{opacity:.4;cursor:not-allowed;}
 
-/* Mobile-friendly line chips */
-.chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
+select{
+  width:100%;padding:10px;border-radius:12px;
+  border:1px solid #30363d;background:#0b0f17;color:#f0f6fc;font-size:14px;
 }
+
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+.stepDot{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 10px;border-radius:999px;border:1px solid #30363d;
+  color:#8b949e;font-weight:800;font-size:.85rem;
+}
+.stepDot.active{color:#f0f6fc;border-color:#556070;}
+.stepDot.done{color:#c9d1d9;border-color:#3b4552;}
+
+.screen{display:none;}
+.screen.active{display:block;}
+
+.choiceRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
+.choice{
+  flex:1;min-width:220px;
+  padding:14px 14px;border-radius:16px;border:1px solid #30363d;
+  background:#0b0f17;cursor:pointer;
+}
+.choice:hover{background:#0f1624;}
+.choice .big{font-size:1.05rem;font-weight:950;}
+.choice .small{color:#8b949e;font-size:.85rem;margin-top:6px;}
+
+.row{display:grid;grid-template-columns:1fr;gap:10px;}
+@media(min-width:900px){ .row{grid-template-columns:1fr 1fr;} }
+
+/* line chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
 .chip{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:10px 12px;
-  border-radius:999px;
-  border:1px solid #30363d;
-  background:#0b0f17;
-  color:#f0f6fc;
-  cursor:pointer;
-  user-select:none;
-  -webkit-tap-highlight-color: transparent;
-  font-weight:800;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 12px;border-radius:999px;border:1px solid #30363d;
+  background:#0b0f17;color:#f0f6fc;cursor:pointer;user-select:none;
+  -webkit-tap-highlight-color: transparent;font-weight:800;
 }
-.chip input{
-  width:18px;
-  height:18px;
-}
-.chip:active{
-  transform: scale(0.99);
-}
+.chip input{width:18px;height:18px;}
+.chip:active{transform:scale(.99);}
 .chip .badge{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-width:28px;
-  height:28px;
-  border-radius:999px;
-  padding:0 10px;
-  color:#fff;
-  font-weight:900;
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:28px;height:28px;border-radius:999px;padding:0 10px;color:#fff;font-weight:900;
 }
 </style>
 </head>
@@ -321,42 +325,81 @@ button:hover{background:#0f1624;}
   <h1>MTA Train Trax</h1>
 
   <div class="panel">
-    <div class="controls">
-      <div>
-        <label for="borough">Borough</label>
-        <select id="borough"></select>
-      </div>
+    <div class="steps" id="steps">
+      <div class="stepDot" data-step="1">1. Direction</div>
+      <div class="stepDot" data-step="2">2. Borough</div>
+      <div class="stepDot" data-step="3">3. Stop</div>
+      <div class="stepDot" data-step="4">4. Trains</div>
+    </div>
 
-      <div>
-        <label for="station">Station</label>
-        <select id="station" disabled></select>
-      </div>
+    <div class="hint" id="status">Loading stations…</div>
 
-      <div>
-        <label for="direction">Direction</label>
-        <select id="direction" disabled></select>
-        <div class="hint">Shown only if N/S stop IDs exist.</div>
-      </div>
-
-      <div id="lineWrap">
-        <label>Line(s) (optional)</label>
-        <div class="hint" style="margin:0 0 8px;">
-          Tap to toggle lines. Leave all off for all lines.
+    <!-- Screen 1 -->
+    <div class="screen" id="screen1">
+      <div style="margin-top:10px;font-weight:950;font-size:1.1rem;">Which direction are you going?</div>
+      <div class="choiceRow">
+        <div class="choice" id="pickUptown">
+          <div class="big">Uptown</div>
+          <div class="small">Prefer northbound (N) when available</div>
         </div>
-        <div id="lineChips" class="chips" aria-label="Line filters"></div>
-        <div class="hint" style="margin-top:8px;">
-          <button type="button" id="clearLines" style="padding:8px 10px;border-radius:10px;border:1px solid #30363d;background:#0b0f17;color:#f0f6fc;cursor:pointer;font-weight:800;">
-            Clear lines
-          </button>
+        <div class="choice" id="pickDowntown">
+          <div class="big">Downtown</div>
+          <div class="small">Prefer southbound (S) when available</div>
         </div>
       </div>
     </div>
 
-    <div class="footerRow">
-      <div class="hint" id="status">Loading stations…</div>
+    <!-- Screen 2 -->
+    <div class="screen" id="screen2">
+      <div style="margin-top:10px;font-weight:950;font-size:1.1rem;">Which borough are you in?</div>
+      <div class="row" style="margin-top:10px;">
+        <div>
+          <label style="display:block;color:#8b949e;font-size:.82rem;margin:0 0 6px;">Borough</label>
+          <select id="borough"></select>
+        </div>
+        <div style="display:flex;align-items:end;gap:10px;">
+          <button class="ghost" id="back2">Back</button>
+          <button id="next2" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 3 -->
+    <div class="screen" id="screen3">
+      <div style="margin-top:10px;font-weight:950;font-size:1.1rem;">Which stop?</div>
+      <div class="row" style="margin-top:10px;">
+        <div>
+          <label style="display:block;color:#8b949e;font-size:.82rem;margin:0 0 6px;">Stop</label>
+          <select id="station"></select>
+          <div class="hint">Filtered by borough. Direction is set from Screen 1.</div>
+        </div>
+        <div style="display:flex;align-items:end;gap:10px;">
+          <button class="ghost" id="back3">Back</button>
+          <button id="next3" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="screen" id="screen4">
+      <div style="margin-top:10px;font-weight:950;font-size:1.1rem;">Which trains would you like to see?</div>
+      <div class="hint">Tap to toggle. Leave all off to show everything.</div>
+      <div id="lineChips" class="chips" aria-label="Line filters"></div>
+      <div class="footerRow">
+        <div class="hint" id="lineHint"></div>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button class="ghost" id="back4">Back</button>
+          <button type="button" id="clearLines">Clear</button>
+          <button id="go" disabled>Show times</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerRow" style="margin-top:12px;">
+      <div class="hint" id="summary"></div>
       <div style="display:flex; gap:10px;">
-        <button id="editFilters" style="display:none;">Edit filters</button>
-        <button id="refresh">Refresh</button>
+        <button id="editFilters" style="display:none;">Edit</button>
+        <button id="refresh" style="display:none;">Refresh</button>
       </div>
     </div>
   </div>
@@ -370,32 +413,55 @@ button:hover{background:#0f1624;}
     <table>
       <thead><tr><th>Route</th><th>Stop</th><th>ETA</th></tr></thead>
       <tbody id="tbody">
-        <tr><td colspan="3">Choose a borough and station…</td></tr>
+        <tr><td colspan="3">Make selections to see results…</td></tr>
       </tbody>
     </table>
   </div>
 </div>
 
 <script>
+const statusEl = document.getElementById("status");
+const summaryEl = document.getElementById("summary");
+
+const s1 = document.getElementById("screen1");
+const s2 = document.getElementById("screen2");
+const s3 = document.getElementById("screen3");
+const s4 = document.getElementById("screen4");
+
+const stepsEl = document.getElementById("steps");
+
+const pickUptown = document.getElementById("pickUptown");
+const pickDowntown = document.getElementById("pickDowntown");
+
 const boroughSel = document.getElementById("borough");
 const stationSel = document.getElementById("station");
-const dirSel = document.getElementById("direction");
-const statusEl = document.getElementById("status");
-const refreshBtn = document.getElementById("refresh");
+
+const back2 = document.getElementById("back2");
+const back3 = document.getElementById("back3");
+const back4 = document.getElementById("back4");
+const next2 = document.getElementById("next2");
+const next3 = document.getElementById("next3");
+const goBtn = document.getElementById("go");
 
 const board = document.getElementById("board");
 const tbody = document.getElementById("tbody");
 const updated = document.getElementById("updated");
 const subtitle = document.getElementById("subtitle");
 
-const lineWrap = document.getElementById("lineWrap");
-const editFiltersBtn = document.getElementById("editFilters");
+const refreshBtn = document.getElementById("refresh");
+const editBtn = document.getElementById("editFilters");
+
 const lineChips = document.getElementById("lineChips");
 const clearLinesBtn = document.getElementById("clearLines");
+const lineHint = document.getElementById("lineHint");
 
 let stations = [];
 let filteredStations = [];
-let selectedLineSet = new Set(); // selected lines from chips
+let selectedLineSet = new Set();
+
+let chosenDir = "";     // "N" or "S"
+let chosenBorough = "";
+let chosenStationId = "";
 
 function unique(arr){ return Array.from(new Set(arr)).sort((a,b)=>a.localeCompare(b, undefined, {sensitivity:"base"})); }
 
@@ -411,23 +477,6 @@ function setOptions(select, items, placeholder){
     o.textContent = it.label;
     select.appendChild(o);
   }
-}
-
-function resetDownstream(){
-  stationSel.disabled = true;
-  dirSel.disabled = true;
-  setOptions(stationSel, [], "Choose station");
-  setOptions(dirSel, [], "Choose direction");
-
-  selectedLineSet.clear();
-  lineChips.innerHTML = "";
-  lineWrap.style.display = "";
-  editFiltersBtn.style.display = "none";
-}
-
-function selectedStation(){
-  const id = stationSel.value;
-  return filteredStations.find(s => String(s.id) === String(id));
 }
 
 function cleanLines(lines){
@@ -452,15 +501,6 @@ function cleanStationLabel(label){
   return inside.length ? \`\${base} (\${inside.join(", ")})\` : base;
 }
 
-function directionText(){
-  const d = (dirSel.value || "").toUpperCase();
-  if (!d) return "";
-  const last = d.slice(-1);
-  if (last === "N") return "Northbound";
-  if (last === "S") return "Southbound";
-  return "";
-}
-
 function pill(route){
   route = String(route || "").toUpperCase().trim();
   if(["A","C","E"].includes(route)) return "route-pill route-blue";
@@ -478,7 +518,6 @@ function pill(route){
 }
 
 function badgeClass(route){
-  // badge uses the same color classes as pills
   route = String(route||"").toUpperCase().trim();
   if(["A","C","E"].includes(route)) return "badge route-blue";
   if(["B","D","F","M"].includes(route)) return "badge route-orange";
@@ -494,24 +533,10 @@ function badgeClass(route){
   return "badge";
 }
 
-function toggleLine(line){
-  line = String(line || "").trim().toUpperCase();
-  if(!line || line.includes("X")) return;
-
-  if (selectedLineSet.has(line)) selectedLineSet.delete(line);
-  else selectedLineSet.add(line);
-
-  refresh();
-  maybeCollapseLineSelector();
-}
-
-function getSelectedLines(){
-  return Array.from(selectedLineSet);
-}
-
 function renderLineChips(lines){
   const clean = cleanLines(lines);
   lineChips.innerHTML = "";
+  lineHint.textContent = clean.length ? \`\${clean.length} available at this stop\` : "No line list found for this stop.";
 
   clean.forEach(line => {
     const id = "line_" + line.replace(/[^a-z0-9]/gi, "_");
@@ -524,7 +549,12 @@ function renderLineChips(lines){
     cb.type = "checkbox";
     cb.id = id;
     cb.checked = selectedLineSet.has(line);
-    cb.addEventListener("change", () => toggleLine(line));
+    cb.addEventListener("change", () => {
+      if (selectedLineSet.has(line)) selectedLineSet.delete(line);
+      else selectedLineSet.add(line);
+      updateSummary();
+      goBtn.disabled = !chosenStationId;
+    });
 
     const badge = document.createElement("span");
     badge.className = badgeClass(line);
@@ -540,32 +570,63 @@ function renderLineChips(lines){
   });
 }
 
-// Collapsing behavior for the line selector area
-editFiltersBtn.addEventListener("click", () => {
-  lineWrap.style.display = "";
-  editFiltersBtn.style.display = "none";
-});
+function setActiveScreen(n){
+  [s1,s2,s3,s4].forEach(x => x.classList.remove("active"));
+  document.getElementById("screen"+n).classList.add("active");
 
-function maybeCollapseLineSelector(){
-  const hasBorough = !!boroughSel.value;
-  const hasStation = !!stationSel.value;
-  const hasDir = dirSel.disabled ? true : !!dirSel.value;
-
-  if (hasBorough && hasStation && hasDir) {
-    lineWrap.style.display = "none";
-    editFiltersBtn.style.display = "";
-  } else {
-    lineWrap.style.display = "";
-    editFiltersBtn.style.display = "none";
-  }
+  // steps UI
+  Array.from(stepsEl.querySelectorAll(".stepDot")).forEach(dot => {
+    const step = Number(dot.dataset.step);
+    dot.classList.remove("active","done");
+    if (step < n) dot.classList.add("done");
+    if (step === n) dot.classList.add("active");
+  });
 }
 
-clearLinesBtn.addEventListener("click", () => {
+function selectedStationObj(){
+  return filteredStations.find(s => String(s.id) === String(chosenStationId)) || null;
+}
+
+function pickStopIdForDirection(station, dir){
+  // station.directions = [{dir:"N", stopId:"..."}, {dir:"S", stopId:"..."}]
+  const dirs = station?.directions || [];
+  if (!dirs.length) return station?.id || "";
+
+  const want = String(dir||"").toUpperCase();
+  const match = dirs.find(d => String(d.dir||"").toUpperCase() === want);
+  if (match?.stopId) return match.stopId;
+
+  // If the preferred direction doesn't exist, fall back to the first one.
+  return dirs[0]?.stopId || station?.id || "";
+}
+
+function updateSummary(){
+  const s = selectedStationObj();
+  const baseLabel = s ? cleanStationLabel(s.displayName || s.name) : "";
+  const dirLabel = chosenDir === "N" ? "Uptown (N)" : chosenDir === "S" ? "Downtown (S)" : "";
+  const boroughLabel = chosenBorough || "";
+  const lines = Array.from(selectedLineSet);
+
+  summaryEl.textContent =
+    (dirLabel ? dirLabel + " • " : "") +
+    (boroughLabel ? boroughLabel + " • " : "") +
+    (baseLabel ? baseLabel : "") +
+    (lines.length ? (" • " + lines.join(", ")) : "");
+}
+
+function resetAll(){
+  chosenDir = "";
+  chosenBorough = "";
+  chosenStationId = "";
   selectedLineSet.clear();
-  renderLineChips(selectedStation()?.lines || []);
-  refresh();
-  maybeCollapseLineSelector();
-});
+  filteredStations = [];
+  board.style.display = "none";
+  refreshBtn.style.display = "none";
+  editBtn.style.display = "none";
+  statusEl.textContent = "Pick your direction to begin.";
+  updateSummary();
+  setActiveScreen(1);
+}
 
 async function loadStations(){
   statusEl.textContent = "Loading stations…";
@@ -579,92 +640,117 @@ async function loadStations(){
   const boroughs = unique(stations.map(s => s.borough).filter(b => b && b !== "Unknown"));
   setOptions(boroughSel, boroughs.map(b => ({value:b, label:b})), "Choose borough");
 
-  statusEl.textContent = "Pick borough → station → direction → line(s).";
+  statusEl.textContent = "Pick your direction to begin.";
+  setActiveScreen(1);
 }
 
+pickUptown.addEventListener("click", () => {
+  chosenDir = "N";
+  updateSummary();
+  setActiveScreen(2);
+  next2.disabled = !boroughSel.value;
+});
+pickDowntown.addEventListener("click", () => {
+  chosenDir = "S";
+  updateSummary();
+  setActiveScreen(2);
+  next2.disabled = !boroughSel.value;
+});
+
+back2.addEventListener("click", () => setActiveScreen(1));
+back3.addEventListener("click", () => setActiveScreen(2));
+back4.addEventListener("click", () => setActiveScreen(3));
+
 boroughSel.addEventListener("change", () => {
-  resetDownstream();
-  const b = boroughSel.value;
-  if(!b) return;
+  chosenBorough = boroughSel.value || "";
+  next2.disabled = !chosenBorough;
 
-  filteredStations = stations.filter(s => s.borough === b);
-  stationSel.disabled = false;
-
+  // reset downstream
+  chosenStationId = "";
+  selectedLineSet.clear();
+  filteredStations = chosenBorough ? stations.filter(s => s.borough === chosenBorough) : [];
   setOptions(
     stationSel,
     filteredStations.map(s => ({ value: s.id, label: cleanStationLabel(s.displayName || s.name) })),
-    "Choose station"
+    "Choose stop"
   );
+  next3.disabled = true;
+  goBtn.disabled = true;
+  lineChips.innerHTML = "";
+  updateSummary();
+});
 
-  maybeCollapseLineSelector();
+next2.addEventListener("click", () => {
+  if (!chosenBorough) return;
+  setActiveScreen(3);
 });
 
 stationSel.addEventListener("change", () => {
-  dirSel.disabled = true;
-  setOptions(dirSel, [], "Choose direction");
+  chosenStationId = stationSel.value || "";
+  next3.disabled = !chosenStationId;
 
   selectedLineSet.clear();
-  lineChips.innerHTML = "";
-
-  const s = selectedStation();
-  if(!s) return;
-
-  const dirs = (s.directions || []);
-  if(dirs.length > 1){
-    dirSel.disabled = false;
-    setOptions(dirSel, dirs.map(d => ({ value: d.stopId, label: d.dir })), "Choose direction");
-  }
-
-  // Render chips for this station's lines
-  renderLineChips(s.lines || []);
-
-  maybeCollapseLineSelector();
-  refresh();
+  const s = selectedStationObj();
+  renderLineChips(s?.lines || []);
+  updateSummary();
 });
 
-dirSel.addEventListener("change", () => {
-  maybeCollapseLineSelector();
-  refresh();
+next3.addEventListener("click", () => {
+  if (!chosenStationId) return;
+  setActiveScreen(4);
+  goBtn.disabled = false;
 });
 
-refreshBtn.addEventListener("click", () => {
-  maybeCollapseLineSelector();
-  refresh();
+clearLinesBtn.addEventListener("click", () => {
+  selectedLineSet.clear();
+  const s = selectedStationObj();
+  renderLineChips(s?.lines || []);
+  updateSummary();
 });
+
+editBtn.addEventListener("click", () => {
+  board.style.display = "none";
+  refreshBtn.style.display = "none";
+  editBtn.style.display = "none";
+  statusEl.textContent = "Edit your choices.";
+  setActiveScreen(1);
+});
+
+goBtn.addEventListener("click", async () => {
+  await refresh();
+});
+
+refreshBtn.addEventListener("click", async () => {
+  await refresh();
+});
+
+function getSelectedLines(){
+  return Array.from(selectedLineSet).filter(l => !String(l).toUpperCase().includes("X"));
+}
 
 async function refresh(){
-  const s = selectedStation();
+  const s = selectedStationObj();
   if(!s){
     board.style.display = "none";
     return;
   }
 
-  board.style.display = "block";
   const baseLabel = cleanStationLabel(s.displayName || s.name);
-  const dirLabel = directionText();
+  const dirText = chosenDir === "N" ? "Uptown" : chosenDir === "S" ? "Downtown" : "";
   subtitle.textContent =
-    (s.borough ? s.borough + " • " : "") +
+    (chosenBorough ? chosenBorough + " • " : "") +
     baseLabel +
-    (dirLabel ? " • " + dirLabel : "");
+    (dirText ? " • " + dirText : "");
 
-  // Choose stopId: direction stopId if chosen; else if only one direction exists use it; else station id fallback
-  let chosenStopId = dirSel.value;
-  if (!chosenStopId) {
-    if (s.directions && s.directions.length === 1) chosenStopId = s.directions[0].stopId;
-    else chosenStopId = s.id;
-  }
-
-  const chosenLines = getSelectedLines().filter(l => !l.includes("X"));
+  const chosenStopId = pickStopIdForDirection(s, chosenDir);
+  const chosenLines = getSelectedLines();
 
   statusEl.textContent = "Loading departures…";
   tbody.innerHTML = '<tr><td colspan="3">Loading…</td></tr>';
 
   const url = new URL(location.origin + "/mta");
   url.searchParams.append("stopId", chosenStopId);
-
-  for (const l of chosenLines) {
-    url.searchParams.append("line", l);
-  }
+  for (const l of chosenLines) url.searchParams.append("line", l);
 
   const r = await fetch(url.toString());
   const d = await r.json();
@@ -685,12 +771,16 @@ async function refresh(){
     tbody.innerHTML = '<tr><td colspan="3">No upcoming trains found.</td></tr>';
   }
 
+  board.style.display = "block";
+  refreshBtn.style.display = "inline-flex";
+  editBtn.style.display = "inline-flex";
+
   updated.textContent = "Last updated: " + new Date().toLocaleTimeString();
   statusEl.textContent = "Ready.";
 }
 
 // Boot
-resetDownstream();
+resetAll();
 loadStations().catch(err => {
   console.error(err);
   statusEl.textContent = "Failed to load stations.";
